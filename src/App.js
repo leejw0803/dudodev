@@ -1,11 +1,13 @@
 import React from "react";
-import { Container } from "components";
+import { Landing } from "pages";
+import GlobalStyle from "components/GlobalStyle";
 
 function App() {
   return (
-    <Container>
-      this is first print
-    </Container>
+    <>
+      <GlobalStyle />
+      <Landing />
+    </>
   );
 }
 
