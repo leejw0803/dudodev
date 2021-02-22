@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     line-height: 1.6;
-    background-color: ${props => props.theme.colors.black};
+    background-color: ${props => props.theme.colors.gray900};
 
     a {
       text-decoration: none;
