@@ -31,19 +31,19 @@ function App() {
       </Typography>
       <Margin size={4} />
       <TextBox>
-        <Typography large color="gray700"> 
+        <Typography large pointer color="gray700" onClick={() => {window.open('https://github.com/leejw0803')}}> 
           Programming
         </Typography>
         <Margin row size={2} />
         <Divider row color="gray700"/>
         <Margin row size={2} />
-        <Typography large color="gray700"> 
+        <Typography large pointer color="gray700" onClick={() => {window.open('https://soundcloud.com/dudotwblne')}}> 
           Hiphop
         </Typography>
         <Margin row size={2} />
         <Divider row color="gray700"/>
         <Margin row size={2} />
-        <Typography large color="gray700"> 
+        <Typography large pointer color="gray700" onClick={() => {window.open('https://www.instagram.com/twblne/')}}> 
           Fashion
         </Typography>
       </TextBox>
