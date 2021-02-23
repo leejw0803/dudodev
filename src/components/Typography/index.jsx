@@ -8,6 +8,13 @@ const Typography = styled.div`
   text-overflow: ellipsis;
   overflow: hidden;
 
+
+  ${props =>
+    props.pointer &&
+    `
+      cursor: pointer;
+    `}
+
   ${props =>
     props.center &&
     `
