@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import { Typography, Margin, Divider } from "components";
+import { Margin, Divider } from "components";
+import Typography from "components/Typography"
 
 
 const Container = styled.div`
@@ -17,7 +18,16 @@ const TextBox = styled.div`
   align-items: center;
 `;
 
-function App() {
+const StyledTypography = styled(Typography)`
+  opacity: 0.5;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;    
+  }
+`;
+
+function Landing() {
   return (
     <Container>
       <Typography landing color="gray400">
@@ -31,24 +41,24 @@ function App() {
       </Typography>
       <Margin size={4} />
       <TextBox>
-        <Typography large pointer color="gray700" onClick={() => {window.open('https://github.com/leejw0803')}}> 
+        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://github.com/leejw0803')}}> 
           Programming
-        </Typography>
+        </StyledTypography>
         <Margin row size={2} />
         <Divider row color="gray700"/>
         <Margin row size={2} />
-        <Typography large pointer color="gray700" onClick={() => {window.open('https://soundcloud.com/dudotwblne')}}> 
+        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://soundcloud.com/dudotwblne')}}> 
           Hiphop
-        </Typography>
+        </StyledTypography>
         <Margin row size={2} />
         <Divider row color="gray700"/>
         <Margin row size={2} />
-        <Typography large pointer color="gray700" onClick={() => {window.open('https://www.instagram.com/twblne/')}}> 
+        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://www.instagram.com/twblne/')}}> 
           Fashion
-        </Typography>
+        </StyledTypography>
       </TextBox>
     </Container>
   );
 }
 
-export default App;
+export default Landing;
