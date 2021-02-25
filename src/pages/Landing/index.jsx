@@ -1,8 +1,8 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { Margin, Divider } from "components";
-import Typography from "components/Typography"
-
+import Typography from "components/Typography";
+import { useHistory } from "react-router-dom";
 
 const Container = styled.div`
   margin: 0 30px;
@@ -23,11 +23,12 @@ const StyledTypography = styled(Typography)`
   transition: opacity 0.2s;
 
   &:hover {
-    opacity: 1;    
+    opacity: 1;
   }
 `;
 
 function Landing() {
+  const history = useHistory();
   return (
     <Container>
       <Typography landing color="gray400">
@@ -36,24 +37,45 @@ function Landing() {
       <Typography landing color="gray400">
         DUDO
       </Typography>
-      <Typography landing color="gray400"> 
+      <Typography landing color="gray400">
         LEE JUNG WOO
       </Typography>
       <Margin size={4} />
       <TextBox>
-        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://github.com/leejw0803')}}> 
+        <StyledTypography
+          large
+          pointer
+          color="gray500"
+          onClick={() => {
+            history.push("/programming");
+          }}
+        >
           Programming
         </StyledTypography>
         <Margin row size={2} />
-        <Divider row color="gray700"/>
+        <Divider row color="gray700" />
         <Margin row size={2} />
-        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://soundcloud.com/dudotwblne')}}> 
+        <StyledTypography
+          large
+          pointer
+          color="gray500"
+          onClick={() => {
+            history.push("/hiphop");
+          }}
+        >
           Hiphop
         </StyledTypography>
         <Margin row size={2} />
-        <Divider row color="gray700"/>
+        <Divider row color="gray700" />
         <Margin row size={2} />
-        <StyledTypography large pointer color="gray500" onClick={() => {window.open('https://www.instagram.com/twblne/')}}> 
+        <StyledTypography
+          large
+          pointer
+          color="gray500"
+          onClick={() => {
+            history.push("/fashion");
+          }}
+        >
           Fashion
         </StyledTypography>
       </TextBox>
