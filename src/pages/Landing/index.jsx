@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Margin, Divider } from "components";
 import Typography from "components/Typography";
 import { useHistory } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import allactions from "state";
 
 const Container = styled.div`
   margin: 0 30px;
@@ -27,10 +29,26 @@ const StyledTypography = styled(Typography)`
   }
 `;
 
+const SideNav = styled.div`
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: ${(props) => (props.hover ? "50%" : "0")};
+  right: 0;
+  background-color: ${(props) => props.theme.colors.gray700};
+  transition: all 0.3s;
+`;
+
 function Landing() {
   const history = useHistory();
+  const [hover, setHover] = useState({
+    hover: false,
+    type: 0,
+  });
+
   return (
     <Container>
+      <SideNav hover={hover.hover}>{hover.type}</SideNav>
       <Typography landing color="gray400">
         TWBLNE
       </Typography>
@@ -49,6 +67,18 @@ function Landing() {
           onClick={() => {
             history.push("/programming");
           }}
+          onMouseOver={() => {
+            setHover({
+              hover: true,
+              type: 1,
+            });
+          }}
+          onMouseOut={() => {
+            setHover({
+              hover: false,
+              type: 0,
+            });
+          }}
         >
           Programming
         </StyledTypography>
@@ -62,6 +92,18 @@ function Landing() {
           onClick={() => {
             history.push("/hiphop");
           }}
+          onMouseOver={() => {
+            setHover({
+              hover: true,
+              type: 2,
+            });
+          }}
+          onMouseOut={() => {
+            setHover({
+              hover: false,
+              type: 0,
+            });
+          }}
         >
           Hiphop
         </StyledTypography>
@@ -74,6 +116,18 @@ function Landing() {
           color="gray500"
           onClick={() => {
             history.push("/fashion");
+          }}
+          onMouseOver={() => {
+            setHover({
+              hover: true,
+              type: 3,
+            });
+          }}
+          onMouseOut={() => {
+            setHover({
+              hover: false,
+              type: 0,
+            });
           }}
         >
           Fashion
