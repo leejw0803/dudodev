@@ -8,9 +8,10 @@ const Nav = styled.div`
   display: flex;
   position: absolute;
   height: 100%;
-  width: ${(props) => (props.hover ? "50%" : "0")};
+  width: 50%;
   right: 0;
-  background-color: ${(props) => props.theme.colors.gray700};
+  background-color: ${(props) => props.theme.colors.gray900};
+  opacity: ${(props) => (props.hover ? 1 : 0)};
   transition: all 0.3s;
 `;
 
@@ -29,13 +30,12 @@ const Profile = styled.div`
 `;
 
 const Picture = styled.div`
-  border-radius: 46px;
+  border: 1px solid ${(props) => props.theme.colors.white};
   width: 380px;
   height: 330px;
   background-image: url(${profile});
   background-size: cover;
   background-position-y: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const TextBox = styled.div`
@@ -60,37 +60,33 @@ function SideNav({ hover, type }) {
       <Nav hover={hover}>
         <ProgrammingContent hover={hover}>
           <Profile>
-            <Picture></Picture>
+            <Picture />
             <Margin row size={6} />
             <TextBox>
               <Row>
-                <Typography title1 color="gray900">
-                  이 정 우
-                </Typography>
-                <Margin row size={4.5} />
-                <Typography title2 color="gray900">
-                  Dudo
+                <Typography title1 color="gray400">
+                  Lee Jungwoo
                 </Typography>
               </Row>
               <Margin size={1} />
               <Row>
-                <Typography title3 color="gray900">
+                <Typography title3 color="gray400">
                   Software Engineer
                 </Typography>
               </Row>
               <Margin size={6} />
               <Row>
-                <Typography content1 color="gray900">
+                <Typography content1 color="gray400">
                   Front-End
                 </Typography>
               </Row>
               <Row>
-                <Typography content2 color="gray900">
+                <Typography content2 color="gray400">
                   ReactJS
                 </Typography>
               </Row>
               <Row>
-                <Typography content2 color="gray900">
+                <Typography content2 color="gray400">
                   HTML, CSS, JavaScript
                 </Typography>
               </Row>
