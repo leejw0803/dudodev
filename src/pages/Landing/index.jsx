@@ -42,13 +42,13 @@ function Landing() {
       <SideNav hover={hover.hover} type={hover.type} />
       <Container>
         <Typography landing color="gray400">
-          TWBLNE
+          LEE JUNG WOO
         </Typography>
         <Typography landing color="gray400">
           DUDO
         </Typography>
         <Typography landing color="gray400">
-          LEE JUNG WOO
+          TWBLNE
         </Typography>
         <Margin size={4} />
         <TextBox>
