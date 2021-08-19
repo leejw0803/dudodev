@@ -101,3 +101,17 @@
     url("default/EliceDigitalBaeumOTF_Bold.otf") format("otf"),
     url("default/EliceDigitalBaeum_Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Consola";
+  font-weight: 400;
+  font-display: swap;
+  src: local("ConsolaR"), url("default/consola.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Consola";
+  font-weight: 700;
+  font-display: swap;
+  src: local("ConsolaB"), url("default/consolab.ttf") format("truetype");
+}

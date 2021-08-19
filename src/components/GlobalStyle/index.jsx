@@ -9,7 +9,7 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 16px;
-    font-family: 'Elice Digital', sans-serif;
+    font-family: 'Consola', sans-serif;
   }
 
   body {
