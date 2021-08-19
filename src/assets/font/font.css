@@ -1,85 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&subset=korean&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&subset=korean&display=swap");
 
 @font-face {
-	font-family: 'Noto Sans KR';
-	font-weight: 700;
-	unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-	font-display: swap;
-	src: local('Spoqa Han Sans Bold'),
-		url('default/Spoqa Han Sans Bold.woff2') format('woff2'),
-		url('default/Spoqa Han Sans Bold.woff') format('woff'),
-		url('default/Spoqa Han Sans Bold.ttf') format('truetype');
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+  font-display: swap;
+  src: local("Spoqa Han Sans Bold"),
+    url("default/Spoqa Han Sans Bold.woff2") format("woff2"),
+    url("default/Spoqa Han Sans Bold.woff") format("woff"),
+    url("default/Spoqa Han Sans Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Noto Sans KR';
-	font-weight: 400;
-	unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-	font-display: swap;
-	src: local('Spoqa Han Sans Regular'),
-		url('default/Spoqa Han Sans Regular.woff2') format('woff2'),
-		url('default/Spoqa Han Sans Regular.woff') format('woff'),
-		url('default/Spoqa Han Sans Regular.ttf') format('truetype');
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+  font-display: swap;
+  src: local("Spoqa Han Sans Regular"),
+    url("default/Spoqa Han Sans Regular.woff2") format("woff2"),
+    url("default/Spoqa Han Sans Regular.woff") format("woff"),
+    url("default/Spoqa Han Sans Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Noto Sans KR';
-	font-weight: 300;
-	unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-	font-display: swap;
-	src: local('Spoqa Han Sans Light'),
-		url('default/Spoqa Han Sans Light.woff2') format('woff2'),
-		url('default/Spoqa Han Sans Light.woff') format('woff'),
-		url('default/Spoqa Han Sans Light.ttf') format('truetype');
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+  font-display: swap;
+  src: local("Spoqa Han Sans Light"),
+    url("default/Spoqa Han Sans Light.woff2") format("woff2"),
+    url("default/Spoqa Han Sans Light.woff") format("woff"),
+    url("default/Spoqa Han Sans Light.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Noto Sans KR';
-	font-weight: 100;
-	unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-	font-display: swap;
-	src: local('Spoqa Han Sans Thin'),
-		url('default/Spoqa Han Sans Thin.woff2') format('woff2'),
-		url('default/Spoqa Han Sans Thin.woff') format('woff'),
-		url('default/Spoqa Han Sans Thin.ttf') format('truetype');
+  font-family: "Noto Sans KR";
+  font-weight: 100;
+  unicode-range: U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+  font-display: swap;
+  src: local("Spoqa Han Sans Thin"),
+    url("default/Spoqa Han Sans Thin.woff2") format("woff2"),
+    url("default/Spoqa Han Sans Thin.woff") format("woff"),
+    url("default/Spoqa Han Sans Thin.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Nanum Square Round';
-	font-weight: 300;
-	font-display: swap;
-	src: local('NanumSquareRoundL'),
-		url('default/NanumSquareRoundL.woff2') format('woff2'),
-		url('default/NanumSquareRoundL.woff') format('woff'),
-		url('default/NanumSquareRoundL.ttf') format('truetype');
+  font-family: "Nanum Square Round";
+  font-weight: 300;
+  font-display: swap;
+  src: local("NanumSquareRoundL"),
+    url("default/NanumSquareRoundL.woff2") format("woff2"),
+    url("default/NanumSquareRoundL.woff") format("woff"),
+    url("default/NanumSquareRoundL.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Nanum Square Round';
-	font-weight: 400;
-	font-display: swap;
-	src: local('NanumSquareRoundR'),
-		url('default/NanumSquareRoundR.woff2') format('woff2'),
-		url('default/NanumSquareRoundR.woff') format('woff'),
-		url('default/NanumSquareRoundR.ttf') format('truetype');
+  font-family: "Nanum Square Round";
+  font-weight: 400;
+  font-display: swap;
+  src: local("NanumSquareRoundR"),
+    url("default/NanumSquareRoundR.woff2") format("woff2"),
+    url("default/NanumSquareRoundR.woff") format("woff"),
+    url("default/NanumSquareRoundR.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Nanum Square Round';
-	font-weight: 700;
-	font-display: swap;
-	src: local('NanumSquareRoundB'),
-		url('default/NanumSquareRoundB.woff2') format('woff2'),
-		url('default/NanumSquareRoundB.woff') format('woff'),
-		url('default/NanumSquareRoundB.ttf') format('truetype');
+  font-family: "Nanum Square Round";
+  font-weight: 700;
+  font-display: swap;
+  src: local("NanumSquareRoundB"),
+    url("default/NanumSquareRoundB.woff2") format("woff2"),
+    url("default/NanumSquareRoundB.woff") format("woff"),
+    url("default/NanumSquareRoundB.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Nanum Square Round';
-	font-weight: 800;
-	font-display: swap;
-	src: local('NanumSquareRoundEB'),
-		url('default/NanumSquareRoundEB.woff2') format('woff2'),
-		url('default/NanumSquareRoundEB.woff') format('woff'),
-		url('default/NanumSquareRoundEB.ttf') format('truetype');
+  font-family: "Nanum Square Round";
+  font-weight: 800;
+  font-display: swap;
+  src: local("NanumSquareRoundEB"),
+    url("default/NanumSquareRoundEB.woff2") format("woff2"),
+    url("default/NanumSquareRoundEB.woff") format("woff"),
+    url("default/NanumSquareRoundEB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Elice Digital";
+  font-weight: 400;
+  font-display: swap;
+  src: local("EliceDigitalBaeumR"),
+    url("default/EliceDigitalBaeumOTF_Regular.otf") format("otf"),
+    url("default/EliceDigitalBaeum_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Elice Digital";
+  font-weight: 700;
+  font-display: swap;
+  src: local("EliceDigitalBaeumB"),
+    url("default/EliceDigitalBaeumOTF_Bold.otf") format("otf"),
+    url("default/EliceDigitalBaeum_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Consola";
+  font-weight: 400;
+  font-display: swap;
+  src: local("ConsolaR"), url("default/consola.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Consola";
+  font-weight: 700;
+  font-display: swap;
+  src: local("ConsolaB"), url("default/consolab.ttf") format("truetype");
 }
