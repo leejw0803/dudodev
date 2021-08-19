@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Margin, SideNav } from "components";
+import { Margin, SideNav, Row } from "components";
 import Typography from "components/Typography";
 import { useHistory } from "react-router-dom";
 // import { useDispatch } from "react-redux";
@@ -13,114 +13,100 @@ const Container = styled.div`
   min-width: 50%;
 `;
 
-const TextBox = styled.div`
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-const StyledTypography = styled(Typography)`
-  opacity: 0.5;
-  transition: opacity 0.2s;
-
+const StyledDiv = styled.div`
   &:hover {
-    opacity: 1;
+    background-color: ${(props) => props.theme.colors.gray300};
   }
 `;
 
 function Landing() {
-  const history = useHistory();
-  const [hover, setHover] = useState({
-    hover: false,
-    type: 0,
-  });
-
   return (
     <>
-      <SideNav hover={hover.hover} type={hover.type} />
       <Container>
-        <Typography landing color="gray400">
-          LEE JUNG WOO
-        </Typography>
-        <Typography landing color="gray400">
-          DUDO
-        </Typography>
-        <Typography landing color="gray400">
-          TWBLNE
-        </Typography>
-        <Margin size={4} />
-        <TextBox>
-          <StyledTypography
-            large
-            pointer
-            color="gray500"
-            onClick={() => {
-              history.push("/programming");
-            }}
-            onMouseOver={() => {
-              setHover({
-                hover: true,
-                type: 1,
-              });
-            }}
-            onMouseOut={() => {
-              setHover({
-                hover: false,
-                type: 0,
-              });
-            }}
-          >
-            Programming
-          </StyledTypography>
-          <Margin row size={2} />
-          <StyledTypography
-            large
-            pointer
-            color="gray500"
-            onClick={() => {
-              history.push("/hiphop");
-            }}
-            onMouseOver={() => {
-              setHover({
-                hover: true,
-                type: 2,
-              });
-            }}
-            onMouseOut={() => {
-              setHover({
-                hover: false,
-                type: 0,
-              });
-            }}
-          >
-            Hiphop
-          </StyledTypography>
-          <Margin row size={2} />
-          <StyledTypography
-            large
-            pointer
-            color="gray500"
-            onClick={() => {
-              history.push("/fashion");
-            }}
-            onMouseOver={() => {
-              setHover({
-                hover: true,
-                type: 3,
-              });
-            }}
-            onMouseOut={() => {
-              setHover({
-                hover: false,
-                type: 0,
-              });
-            }}
-          >
-            Fashion
-          </StyledTypography>
-        </TextBox>
+        <Row align="center">
+          <Typography large color="blue300">
+            const{" "}
+          </Typography>
+          <Typography large color="blue200">
+            me{" "}
+          </Typography>
+          <Typography large color="gray400">
+            ={" "}
+          </Typography>
+          <Typography large color="gray400">
+            &#123;
+          </Typography>
+        </Row>
+        <Row align="center">
+          <Margin row size={10} />
+          <Typography landing color="blue100">
+            name:{" "}
+          </Typography>
+          <Typography landing color="blue100">
+            leeJungWoo
+          </Typography>
+          <Typography landing color="gray400">
+            ,
+          </Typography>
+        </Row>
+        <Row align="center">
+          <Margin row size={10} />
+          <Typography landing color="blue100">
+            nickName:{" "}
+          </Typography>
+          <Typography landing color="blue100">
+            dudo
+          </Typography>
+          <Typography landing color="gray400">
+            ,
+          </Typography>
+        </Row>
+        <Row align="center">
+          <Margin row size={10} />
+          <Typography landing color="blue100">
+            motto:{" "}
+          </Typography>
+          <Typography landing color="blue100">
+            twblne
+          </Typography>
+          <Typography landing color="gray400">
+            ,
+          </Typography>
+        </Row>
+        <Row>
+          <Typography large color="gray400">
+            &#125;
+          </Typography>
+        </Row>
+        <Margin size={20} />
+        <Row align="center">
+          <Typography large color="blue300">
+            const{" "}
+          </Typography>
+          <Typography large color="yellow300">
+            beTheEverything{" "}
+          </Typography>
+          <Typography large color="gray400">
+            ={" "}
+          </Typography>
+          <Typography large color="gray400">
+            (
+          </Typography>
+          <Typography large color="blue100">
+            life
+          </Typography>
+          <Typography large color="gray400">
+            ){" "}
+          </Typography>
+          <Typography large color="blue300">
+            =&gt;{" "}
+          </Typography>
+          <StyledDiv>
+            <Typography large color="gray400" pointer>
+              &#123;...&#125;
+            </Typography>
+          </StyledDiv>
+        </Row>
       </Container>
     </>
   );
