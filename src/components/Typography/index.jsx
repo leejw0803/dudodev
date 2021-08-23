@@ -67,10 +67,18 @@ const Typography = styled.div`
       font-size: 1.75rem;
       font-weight: bold;
     `}
+
   ${(props) =>
     props.content2 &&
     `
       font-size: 1.75rem;
+      font-weight: normal;
+    `}
+
+  ${(props) =>
+    props.header &&
+    `
+      font-size: 1.25rem;
       font-weight: normal;
     `}
 `;

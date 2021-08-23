@@ -1,7 +1,7 @@
-import styled, { withTheme, css } from 'styled-components';
+import styled, { withTheme, css } from "styled-components";
 
 export const Grid = withTheme(styled.div`
-  width: ${props => props.theme.grid.width};
+  width: ${(props) => props.theme.grid.width};
   height: auto;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const Col = withTheme(styled.div`
   display: flex;
   flex-direction: column;
 
-  ${props =>
+  ${(props) =>
     props.size &&
     css`
       width: calc(
@@ -22,13 +22,13 @@ export const Col = withTheme(styled.div`
       );
     `}
 
-  ${props =>
+  ${(props) =>
     props.center &&
     `
     justify-content: center;
   `}
 
-  ${props =>
+  ${(props) =>
     props.end &&
     css`
       justify-content: flex-end;
@@ -38,49 +38,50 @@ export const Col = withTheme(styled.div`
 export const Row = withTheme(styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
 
-  ${props =>
+  ${(props) =>
     props.justify &&
     `
     justify-content: ${props.justify};
   `}
 
-  ${props =>
+  ${(props) =>
     props.align &&
     `
     align-items: ${props.align};
   `}
 
   ${Col} ~ ${Col} {
-    margin-left: ${props => props.theme.grid.gutter};
+    margin-left: ${(props) => props.theme.grid.gutter};
   }
 `);
 
 export const Container = withTheme(styled.div`
-  width: ${props => props.theme.grid.width};
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 
-  ${props =>
+  ${(props) =>
     props.row &&
     `
     flex-direction: row;
   `}
 
-  ${props =>
+  ${(props) =>
     props.column &&
     `
     flex-direction: column;
   `}
 
-  ${props =>
+  ${(props) =>
     props.center &&
     `
     align-items: center;
   `}
 
-  ${props =>
+  ${(props) =>
     props.cover &&
     `
     width: 100vw;
