@@ -81,6 +81,7 @@ const colors = {
 
   /* Green */
   green50: "#dee2d6",
+  green100: "#008080",
   green300: "#20ba45",
 
   /* Blue */
@@ -98,7 +99,7 @@ const colors = {
   navy: "#1F3248",
 
   /* Violet */
-  violet: "#7737b8",
+  violet: "#e619e5",
 
   /* Statement */
   shadow: "0 7px 10px rgba(0, 0, 0, 0.18)",
