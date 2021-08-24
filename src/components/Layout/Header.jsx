@@ -3,9 +3,19 @@ import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Container, Typography, Row, Margin } from "components";
+import { useHistory } from "react-router-dom";
+
+import jsLogoPng from "assets/image/icn_js_logo.png";
+import reactLogoPng from "assets/image/icn_react_logo.png";
+
+const Logo = styled.img`
+  width: 16px;
+  height: 16px;
+  border: 1px solid ${(props) => props.theme.colors.gray600};
+`;
 
 const Menu = styled.li`
-  padding: 0 24px;
+  padding: 0 16px;
   height: 48px;
   display: flex;
   align-items: center;
@@ -59,6 +69,7 @@ const StyledDiv = styled.div`
 
 function Header() {
   const dispatch = useDispatch();
+  const history = useHistory();
   const currentScroll = useSelector((state) => state.shared.scroll);
 
   return (
@@ -66,16 +77,26 @@ function Header() {
       <Container row center>
         <MenuList>
           <Menu
-            onClick={() => dispatch({ type: "SET_SCROLL", scroll: "HERO" })}
+            onClick={() => {
+              dispatch({ type: "SET_SCROLL", scroll: "HERO" });
+              history.push("/");
+            }}
             active={currentScroll === "HERO"}
           >
+            <Logo src={jsLogoPng} alt="js logo" />
+            <Margin row size={1} />
             <StyledTypography header>AboutMe.js</StyledTypography>
           </Menu>
           <Menu
-            onClick={() => dispatch({ type: "SET_SCROLL", scroll: "STACK" })}
+            onClick={() => {
+              dispatch({ type: "SET_SCROLL", scroll: "STACK" });
+              history.push("/stack");
+            }}
             active={currentScroll === "STACK"}
           >
-            <StyledTypography header>SkillStacks.js</StyledTypography>
+            <Logo src={reactLogoPng} alt="react logo" />
+            <Margin row size={1} />
+            <StyledTypography header>SkillStacks.jsx</StyledTypography>
           </Menu>
         </MenuList>
       </Container>

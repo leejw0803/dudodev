@@ -35,7 +35,7 @@ const Typography = styled.div`
   ${(props) =>
     props.large &&
     `
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: normal;
       font-style: normal;
     `}
@@ -43,42 +43,42 @@ const Typography = styled.div`
   ${(props) =>
     props.title1 &&
     `
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       font-weight: bold;
     `}
 
   ${(props) =>
     props.title2 &&
     `
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       font-weight: normal;
     `}
 
   ${(props) =>
     props.title3 &&
     `
-      font-size: 2rem;
+      font-size: 1rem;
       font-weight: normal;
     `}
 
   ${(props) =>
     props.content1 &&
     `
-      font-size: 1.75rem;
+      font-size: 0.75rem;
       font-weight: bold;
     `}
 
   ${(props) =>
     props.content2 &&
     `
-      font-size: 1.75rem;
+      font-size: 0.75rem;
       font-weight: normal;
     `}
 
   ${(props) =>
     props.header &&
     `
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: normal;
     `}
 `;
