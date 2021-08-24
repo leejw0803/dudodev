@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Container, Typography } from "components";
+import { Container, Typography, Row, Margin } from "components";
 
 const Menu = styled.li`
   padding: 0 24px;
-  height: 64px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +43,7 @@ const MenuList = styled.ul`
 
 const Head = styled.header`
   display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
   left: 0;
@@ -50,6 +51,10 @@ const Head = styled.header`
   color: ${(props) => props.theme.colors.gray400};
   background-color: ${(props) => props.theme.colors.gray700};
   z-index: 99;
+`;
+
+const StyledDiv = styled.div`
+  background-color: ${(props) => props.theme.colors.gray900};
 `;
 
 function Header() {
@@ -74,6 +79,18 @@ function Header() {
           </Menu>
         </MenuList>
       </Container>
+      <StyledDiv>
+        <Margin size={0.5} />
+        <Container row center>
+          <Row>
+            <Margin row size={2} />
+            <Typography color="gray500">
+              front_end &gt; developer &gt; lee_jung_woo &gt; aka &gt; dudo
+            </Typography>
+          </Row>
+        </Container>
+        <Margin size={0.5} />
+      </StyledDiv>
     </Head>
   );
 }
