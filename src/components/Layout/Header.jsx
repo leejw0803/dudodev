@@ -12,6 +12,11 @@ const Logo = styled.img`
   width: 16px;
   height: 16px;
   border: 1px solid ${(props) => props.theme.colors.gray600};
+
+  @media (max-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
 `;
 
 const Menu = styled.li`
@@ -24,6 +29,10 @@ const Menu = styled.li`
 
   ${(props) =>
     props.active && `background-color: ${props.theme.colors.gray900};`}
+
+  @media (max-width: 768px) {
+    height: 30px;
+  }
 `;
 
 const StyledTypography = styled((props) => <Typography {...props} />)`
@@ -116,7 +125,7 @@ function Header() {
         <Container row center>
           <Row>
             <Margin row size={2} />
-            <Typography color="gray500">
+            <Typography color="gray500" title3>
               front_end &gt; developer &gt; lee_jung_woo &gt; aka &gt; dudo
             </Typography>
           </Row>

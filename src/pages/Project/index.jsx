@@ -10,25 +10,6 @@ import {
   Row,
 } from "components";
 
-import jsLogo from "assets/image/icn_js_logo.png";
-import reactLogo from "assets/image/icn_react_logo.png";
-import awsLogo from "assets/image/icn_aws_logo.png";
-import githubLogo from "assets/image/icn_github_logo.png";
-import jiraLogo from "assets/image/icn_jira_logo.jpeg";
-import nextLogo from "assets/image/icn_next_logo.png";
-import scLogo from "assets/image/icn_sc_logo.png";
-import tsLogo from "assets/image/icn_ts_logo.jpeg";
-
-const Logo = styled.img`
-  width: 24px;
-  height: 24px;
-  border: 1px solid ${(props) => props.theme.colors.gray600};
-`;
-
-const StyledContainer = styled(Container)`
-  margin: 0 30px;
-`;
-
 const ClickableRow = styled(Row)`
   cursor: pointer;
   &:hover {
@@ -39,7 +20,7 @@ const ClickableRow = styled(Row)`
 function Project() {
   return (
     <Layout>
-      <StyledContainer>
+      <Container>
         <StyledRow line={1}>
           <Typography large color="blue300">
             function{" "}
@@ -222,7 +203,7 @@ function Project() {
             default{" "}
           </Typography>
           <Typography large color="yellow300">
-            SkillStack
+            Projects
           </Typography>
           <Typography large color="gray400">
             ;
@@ -231,7 +212,7 @@ function Project() {
         <StyledRow line={20}>
           <Margin size={6} />
         </StyledRow>
-      </StyledContainer>
+      </Container>
     </Layout>
   );
 }

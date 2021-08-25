@@ -50,6 +50,10 @@ const Typography = styled.div`
     `
       font-size: 1.5rem;
       font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 0.75rem;
+      }
     `}
 
   ${(props) =>
@@ -57,6 +61,10 @@ const Typography = styled.div`
     `
       font-size: 1.5rem;
       font-weight: normal;
+
+      @media (max-width: 768px) {
+        font-size: 0.75rem;
+      }
     `}
 
   ${(props) =>
@@ -64,6 +72,10 @@ const Typography = styled.div`
     `
       font-size: 1rem;
       font-weight: normal;
+
+      @media (max-width: 768px) {
+        font-size: 0.5rem;
+      }
     `}
 
   ${(props) =>
@@ -71,6 +83,10 @@ const Typography = styled.div`
     `
       font-size: 0.75rem;
       font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 0.375rem;
+      }
     `}
 
   ${(props) =>
@@ -78,6 +94,9 @@ const Typography = styled.div`
     `
       font-size: 0.75rem;
       font-weight: normal;
+      @media (max-width: 768px) {
+        font-size: 0.375rem;
+      }
     `}
 
   ${(props) =>
@@ -85,6 +104,9 @@ const Typography = styled.div`
     `
       font-size: 1rem;
       font-weight: normal;
+      @media (max-width: 768px) {
+        font-size: 0.5rem;
+      }
     `}
 `;
 

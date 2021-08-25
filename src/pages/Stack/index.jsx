@@ -23,16 +23,17 @@ const Logo = styled.img`
   width: 24px;
   height: 24px;
   border: 1px solid ${(props) => props.theme.colors.gray600};
-`;
 
-const StyledContainer = styled(Container)`
-  margin: 0 30px;
+  @media (max-width: 768px) {
+    width: 12px;
+    height: 12px;
+  }
 `;
 
 function Stack() {
   return (
     <Layout>
-      <StyledContainer>
+      <Container>
         <StyledRow line={1}>
           <Typography large color="blue300">
             function{" "}
@@ -253,7 +254,7 @@ function Stack() {
         <StyledRow line={23}>
           <Margin size={6} />
         </StyledRow>
-      </StyledContainer>
+      </Container>
     </Layout>
   );
 }
