@@ -98,6 +98,17 @@ function Header() {
             <Margin row size={1} />
             <StyledTypography header>SkillStacks.jsx</StyledTypography>
           </Menu>
+          <Menu
+            onClick={() => {
+              dispatch({ type: "SET_SCROLL", scroll: "PROJECT" });
+              history.push("/project");
+            }}
+            active={currentScroll === "PROJECT"}
+          >
+            <Logo src={reactLogoPng} alt="react logo" />
+            <Margin row size={1} />
+            <StyledTypography header>Projects.jsx</StyledTypography>
+          </Menu>
         </MenuList>
       </Container>
       <StyledDiv>
@@ -110,7 +121,7 @@ function Header() {
             </Typography>
           </Row>
         </Container>
-        <Margin size={0.5} />
+        <Margin size={2} />
       </StyledDiv>
     </Head>
   );

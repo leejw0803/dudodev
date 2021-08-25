@@ -3,7 +3,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import { GlobalStyle } from "components";
 import { createBrowserHistory } from "history";
 
-import { Landing, Stack, Hiphop, Fashion } from "pages";
+import { Landing, Stack, Project, Fashion } from "pages";
 
 const history = createBrowserHistory();
 
@@ -20,8 +20,8 @@ function Root() {
             <Route path="/stack">
               <Stack />
             </Route>
-            <Route path="/hiphop">
-              <Hiphop />
+            <Route path="/project">
+              <Project />
             </Route>
             <Route path="/Fashion">
               <Fashion />
