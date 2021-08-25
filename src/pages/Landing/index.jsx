@@ -1,36 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import styled from "styled-components";
 import { Margin, Container, StyledRow, Layout } from "components";
 import Typography from "components/Typography";
 
-const StyledContainer = styled(Container)`
-  margin: 0 30px;
-`;
-
 function Landing() {
-  // const value = useSelector((state) => state.shared.scroll);
-
-  // const focusTarget = useRef([]);
-
-  // const scrollToRef = (value) => {
-  //   const obj = {
-  //     HERO: 0,
-  //     STACK: 1,
-  //   };
-  //   focusTarget.current[obj[value]].scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   scrollToRef(value);
-  // }, [value]);
-
   return (
     <Layout>
-      <StyledContainer>
+      <Container>
         <StyledRow line={1}>
           <Typography large color="blue300">
             const{" "}
@@ -103,7 +79,7 @@ function Landing() {
         <StyledRow line={8}>
           <Margin size={6} />
         </StyledRow>
-      </StyledContainer>
+      </Container>
     </Layout>
   );
 }

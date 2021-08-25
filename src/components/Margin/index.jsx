@@ -1,11 +1,21 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const Margin = styled.div`
-  height: calc(${props => props.size} * 0.5rem);
-  ${props =>
+  height: calc(${(props) => props.size} * 0.5rem);
+  ${(props) =>
     props.row &&
     css`
       height: 0;
-      width: calc(${props => props.size} * 0.5rem);
+      width: calc(${(props) => props.size} * 0.5rem);
     `}
+
+  @media (max-width: 768px) {
+    height: calc(${(props) => props.size} * 0.125rem);
+    ${(props) =>
+      props.row &&
+      css`
+        height: 0;
+        width: calc(${(props) => props.size} * 0.125rem);
+      `}
+  }
 `;
