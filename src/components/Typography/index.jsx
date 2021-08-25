@@ -19,6 +19,7 @@ const Typography = styled.div`
     `
       text-align: center;
     `}
+
   ${(props) =>
     props.underline &&
     `
@@ -38,6 +39,10 @@ const Typography = styled.div`
       font-size: 2rem;
       font-weight: normal;
       font-style: normal;
+      
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     `}
 
   ${(props) =>
