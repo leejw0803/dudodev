@@ -1,4 +1,4 @@
-# dudodev portfolio site
+## dudodev portfolio site
 
 - 포트폴리오 사이트 입니다.
 - 제 정보 및 이력이 적혀있습니다.
