@@ -1,7 +1,7 @@
-# DUDO Side Project
+# dudodev portfolio site
 
-- 사이드 프로젝트
-- react 공부를 하기 위한 사이드 프로젝트입니다.
+- 포트폴리오 사이트 입니다.
+- 제 정보 및 이력이 적혀있습니다.
 
 ## Purpose
 
