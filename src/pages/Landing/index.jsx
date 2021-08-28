@@ -1,13 +1,83 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import { Margin, Container, StyledRow, Layout } from "components";
-import Typography from "components/Typography";
+import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+import { useDispatch } from "react-redux";
+
+import { Margin, Container, StyledRow, Layout, Typography } from "components";
+
+const StyledTypo = styled(Typography)`
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 function Landing() {
+  const history = useHistory();
+  const dispatch = useDispatch();
+
   return (
     <Layout>
       <Container>
         <StyledRow line={1}>
+          <Typography large color="violet">
+            import{" "}
+          </Typography>
+          <Typography large color="blue100">
+            SkillStack{" "}
+          </Typography>
+          <Typography large color="violet">
+            from{" "}
+          </Typography>
+          <Typography large color="brown300">
+            "
+          </Typography>
+          <StyledTypo
+            large
+            color="brown300"
+            onClick={() => {
+              history.push("/stack");
+              dispatch({ type: "SET_SCROLL", scroll: "STACK" });
+            }}
+          >
+            ./SkillStack
+          </StyledTypo>
+          <Typography large color="brown300">
+            "
+          </Typography>
+        </StyledRow>
+        <StyledRow line={2}>
+          <Typography large color="violet">
+            import{" "}
+          </Typography>
+          <Typography large color="blue100">
+            Projects{" "}
+          </Typography>
+          <Typography large color="violet">
+            from{" "}
+          </Typography>
+          <Typography large color="brown300">
+            "
+          </Typography>
+          <StyledTypo
+            large
+            color="brown300"
+            onClick={() => {
+              history.push("/project");
+              dispatch({ type: "SET_SCROLL", scroll: "PROJECT" });
+            }}
+          >
+            ./Projects
+          </StyledTypo>
+          <Typography large color="brown300">
+            "
+          </Typography>
+        </StyledRow>
+        <StyledRow line={3}>
+          <Margin size={6} />
+        </StyledRow>
+        <StyledRow line={4}>
           <Typography large color="blue300">
             const{" "}
           </Typography>
@@ -21,7 +91,7 @@ function Landing() {
             &#123;
           </Typography>
         </StyledRow>
-        <StyledRow line={2}>
+        <StyledRow line={5}>
           <Margin row size={15} />
           <Typography large color="blue100">
             name:{" "}
@@ -33,7 +103,7 @@ function Landing() {
             ,
           </Typography>
         </StyledRow>
-        <StyledRow line={3}>
+        <StyledRow line={6}>
           <Margin row size={15} />
           <Typography large color="blue100">
             nickName:{" "}
@@ -45,7 +115,7 @@ function Landing() {
             ,
           </Typography>
         </StyledRow>
-        <StyledRow line={4}>
+        <StyledRow line={7}>
           <Margin row size={15} />
           <Typography large color="blue100">
             motto:{" "}
@@ -57,15 +127,15 @@ function Landing() {
             ,
           </Typography>
         </StyledRow>
-        <StyledRow line={5}>
+        <StyledRow line={8}>
           <Typography large color="gray400">
             &#125;;
           </Typography>
         </StyledRow>
-        <StyledRow line={6}>
+        <StyledRow line={9}>
           <Margin size={6} />
         </StyledRow>
-        <StyledRow line={7}>
+        <StyledRow line={10}>
           <Typography large color="violet">
             export{" "}
           </Typography>
@@ -76,7 +146,7 @@ function Landing() {
             Me;
           </Typography>
         </StyledRow>
-        <StyledRow line={8}>
+        <StyledRow line={11}>
           <Margin size={6} />
         </StyledRow>
       </Container>
