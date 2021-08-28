@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/dudodev/static/css/main.87832dec.chunk.css",
-    "main.js": "/dudodev/static/js/main.b918f4af.chunk.js",
-    "main.js.map": "/dudodev/static/js/main.b918f4af.chunk.js.map",
+    "main.js": "/dudodev/static/js/main.5b5f61a5.chunk.js",
+    "main.js.map": "/dudodev/static/js/main.5b5f61a5.chunk.js.map",
     "runtime-main.js": "/dudodev/static/js/runtime-main.96977f9d.js",
     "runtime-main.js.map": "/dudodev/static/js/runtime-main.96977f9d.js.map",
-    "static/js/2.8a6104b8.chunk.js": "/dudodev/static/js/2.8a6104b8.chunk.js",
-    "static/js/2.8a6104b8.chunk.js.map": "/dudodev/static/js/2.8a6104b8.chunk.js.map",
+    "static/js/2.a2158e31.chunk.js": "/dudodev/static/js/2.a2158e31.chunk.js",
+    "static/js/2.a2158e31.chunk.js.map": "/dudodev/static/js/2.a2158e31.chunk.js.map",
     "static/js/3.5b4c9464.chunk.js": "/dudodev/static/js/3.5b4c9464.chunk.js",
     "static/js/3.5b4c9464.chunk.js.map": "/dudodev/static/js/3.5b4c9464.chunk.js.map",
     "index.html": "/dudodev/index.html",
     "static/css/main.87832dec.chunk.css.map": "/dudodev/static/css/main.87832dec.chunk.css.map",
-    "static/js/2.8a6104b8.chunk.js.LICENSE.txt": "/dudodev/static/js/2.8a6104b8.chunk.js.LICENSE.txt",
+    "static/js/2.a2158e31.chunk.js.LICENSE.txt": "/dudodev/static/js/2.a2158e31.chunk.js.LICENSE.txt",
     "static/media/font.css": "/dudodev/static/media/consolab.2aa812a6.ttf",
     "static/media/icn_github_logo.2d85fb70.png": "/dudodev/static/media/icn_github_logo.2d85fb70.png",
     "static/media/icn_jira_logo.a01afad0.jpeg": "/dudodev/static/media/icn_jira_logo.a01afad0.jpeg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.96977f9d.js",
-    "static/js/2.8a6104b8.chunk.js",
+    "static/js/2.a2158e31.chunk.js",
     "static/css/main.87832dec.chunk.css",
-    "static/js/main.b918f4af.chunk.js"
+    "static/js/main.5b5f61a5.chunk.js"
   ]
 }
