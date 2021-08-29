@@ -82,7 +82,7 @@ function Landing() {
             const{" "}
           </Typography>
           <Typography large color="blue200">
-            Me{" "}
+            me{" "}
           </Typography>
           <Typography large color="gray400">
             ={" "}
@@ -136,6 +136,40 @@ function Landing() {
           <Margin size={6} />
         </StyledRow>
         <StyledRow line={10}>
+          <Typography large color="blue300">
+            function{" "}
+          </Typography>
+          <Typography large color="yellow300">
+            Me
+          </Typography>
+          <Typography large color="gray400">
+            (
+          </Typography>
+          <Typography large color="gray400">
+            &#123;{" "}
+          </Typography>
+          <Typography large color="blue100">
+            me{" "}
+          </Typography>
+          <Typography large color="gray400">
+            &#125;
+          </Typography>
+          <Typography large color="gray400">
+            ){" "}
+          </Typography>
+          <Typography large color="gray400">
+            &#123;
+          </Typography>
+        </StyledRow>
+        <StyledRow line={11}>
+          <Typography large color="gray400">
+            &#125;
+          </Typography>
+        </StyledRow>
+        <StyledRow line={12}>
+          <Margin size={6} />
+        </StyledRow>
+        <StyledRow line={13}>
           <Typography large color="violet">
             export{" "}
           </Typography>
@@ -146,7 +180,7 @@ function Landing() {
             Me;
           </Typography>
         </StyledRow>
-        <StyledRow line={11}>
+        <StyledRow line={14}>
           <Margin size={6} />
         </StyledRow>
       </Container>
