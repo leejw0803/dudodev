@@ -48,7 +48,7 @@ function Stack() {
             &#123;{" "}
           </Typography>
           <Typography large color="blue100">
-            Me{" "}
+            me{" "}
           </Typography>
           <Typography large color="gray400">
             &#125;
@@ -84,7 +84,7 @@ function Stack() {
             &#123;
           </Typography>
           <Typography large color="blue100">
-            Me
+            me
           </Typography>
           <Typography large color="blue300">
             &#125;
