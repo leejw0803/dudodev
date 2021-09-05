@@ -39,7 +39,7 @@ function Stack() {
             function{" "}
           </Typography>
           <Typography large color="yellow300">
-            SkillStack
+            SkillStacks
           </Typography>
           <Typography large color="gray400">
             (
@@ -245,7 +245,7 @@ function Stack() {
             default{" "}
           </Typography>
           <Typography large color="yellow300">
-            SkillStack
+            SkillStacks
           </Typography>
           <Typography large color="gray400">
             ;
