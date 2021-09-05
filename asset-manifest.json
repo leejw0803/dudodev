@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dudodev/static/css/main.87832dec.chunk.css",
-    "main.js": "/dudodev/static/js/main.5f7c4b28.chunk.js",
-    "main.js.map": "/dudodev/static/js/main.5f7c4b28.chunk.js.map",
+    "main.js": "/dudodev/static/js/main.63b18b81.chunk.js",
+    "main.js.map": "/dudodev/static/js/main.63b18b81.chunk.js.map",
     "runtime-main.js": "/dudodev/static/js/runtime-main.1328a383.js",
     "runtime-main.js.map": "/dudodev/static/js/runtime-main.1328a383.js.map",
     "static/js/2.8c6f869b.chunk.js": "/dudodev/static/js/2.8c6f869b.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.1328a383.js",
     "static/js/2.8c6f869b.chunk.js",
     "static/css/main.87832dec.chunk.css",
-    "static/js/main.5f7c4b28.chunk.js"
+    "static/js/main.63b18b81.chunk.js"
   ]
 }
