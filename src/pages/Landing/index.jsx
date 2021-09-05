@@ -47,7 +47,7 @@ function Landing() {
             import{" "}
           </Typography>
           <Typography large color="blue100">
-            SkillStack{" "}
+            SkillStacks{" "}
           </Typography>
           <Typography large color="violet">
             from{" "}
@@ -63,7 +63,7 @@ function Landing() {
               dispatch({ type: "SET_SCROLL", scroll: "STACK" });
             }}
           >
-            ./SkillStack
+            ./SkillStacks
           </StyledTypo>
           <Typography large color="brown300">
             '
@@ -306,13 +306,83 @@ function Landing() {
             ){" "}
           </Typography>
           <Typography large color="gray400">
-            &#123;comingsoon&#125;
+            &#123;
           </Typography>
         </StyledRow>
         <StyledRow line={18}>
-          <Margin size={6} />
+          <Margin row size={10} />
+          <Typography large color="violet">
+            return{" "}
+          </Typography>
+          <Typography large color="gray400">
+            (
+          </Typography>
         </StyledRow>
         <StyledRow line={19}>
+          <Margin row size={15} />
+          <Typography large color="green100">
+            &lt;SkillStacks{" "}
+          </Typography>
+          <Typography large color="blue100">
+            who
+          </Typography>
+          <Typography large color="gray400">
+            =
+          </Typography>
+          <Typography large color="blue300">
+            &#123;
+          </Typography>
+          <Typography large color="blue100">
+            me
+          </Typography>
+          <Typography large color="blue300">
+            &#125;
+          </Typography>
+          <Typography large color="green100">
+            {" "}
+            /&gt;
+          </Typography>
+        </StyledRow>
+        <StyledRow line={20}>
+          <Margin row size={15} />
+          <Typography large color="green100">
+            &lt;Projects{" "}
+          </Typography>
+          <Typography large color="blue100">
+            who
+          </Typography>
+          <Typography large color="gray400">
+            =
+          </Typography>
+          <Typography large color="blue300">
+            &#123;
+          </Typography>
+          <Typography large color="blue100">
+            me
+          </Typography>
+          <Typography large color="blue300">
+            &#125;
+          </Typography>
+          <Typography large color="green100">
+            {" "}
+            /&gt;
+          </Typography>
+        </StyledRow>
+        <StyledRow line={21}>
+          <Margin row size={10} />
+          <Typography large color="gray400">
+            );
+          </Typography>
+        </StyledRow>
+        <StyledRow line={22}>
+          <Typography large color="gray400">
+            &#125;;
+          </Typography>
+        </StyledRow>
+        <StyledRow line={23}>
+          <Margin size={6} />
+        </StyledRow>
+        <StyledRow line={24}>
           <Typography large color="violet">
             export{" "}
           </Typography>
@@ -323,7 +393,7 @@ function Landing() {
             Me;
           </Typography>
         </StyledRow>
-        <StyledRow line={20}>
+        <StyledRow line={25}>
           <Margin size={6} />
         </StyledRow>
       </Container>
