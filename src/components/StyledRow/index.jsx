@@ -21,7 +21,6 @@ function StyledRow({ children, line }) {
       </StaticCol>
       <Margin row size={5} />
       <Col size={11}>
-        <Margin row size={2} />
         <Row>{children}</Row>
       </Col>
     </Row>
