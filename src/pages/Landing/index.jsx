@@ -1,17 +1,10 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 
-import {
-  Margin,
-  Container,
-  StyledRow,
-  Layout,
-  Typography,
-  Explain,
-} from "components";
+import { Margin, Container, StyledRow, Layout, Typography } from "components";
 
 import githubLogo from "assets/image/icn_github_logo.png";
 import naverLogo from "assets/image/icn_naver_logo.png";
@@ -45,9 +38,6 @@ const TypoWithLogo = styled.div`
 function Landing() {
   const history = useHistory();
   const dispatch = useDispatch();
-  const [explain, setExplain] = useState({
-    stack: false,
-  });
 
   return (
     <Layout>
@@ -330,11 +320,7 @@ function Landing() {
         </StyledRow>
         <StyledRow line={19}>
           <Margin row size={15} />
-          <Typography
-            large
-            color="green100"
-            onClick={() => setExplain({ ...explain, stack: !explain.stack })}
-          >
+          <Typography large color="green100">
             &lt;SkillStacks{" "}
           </Typography>
           <Typography large color="blue100">
@@ -357,18 +343,6 @@ function Landing() {
             /&gt;
           </Typography>
         </StyledRow>
-        {explain.stack && (
-          <Explain>
-            어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd어쩌구 저쩌구ddddd어쩌구
-            저쩌구ddddd어쩌구 저쩌구ddddd
-          </Explain>
-        )}
         <StyledRow line={20}>
           <Margin row size={15} />
           <Typography large color="green100">
