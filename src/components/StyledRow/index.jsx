@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { Row, Col, Typography, Margin } from "components";
 
@@ -9,22 +10,53 @@ const StaticCol = styled.div`
   }
 `;
 
-function StyledRow({ children, line }) {
+const Wrapper = styled(Col)`
+  ${(props) =>
+    props.clickable &&
+    `
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline ${props.theme.colors.grayy700};
+      }
+    `}
+`;
+
+function StyledRow({ children, line, explain }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Row align="center">
-      <StaticCol>
-        <Row justify="flex-end">
-          <Typography title2 color="gray500">
-            {line}
-          </Typography>
+    <>
+      <Row align="center">
+        <StaticCol>
+          <Row justify="flex-end">
+            <Typography title2 color="gray500">
+              {line}
+            </Typography>
+          </Row>
+        </StaticCol>
+        <Margin row size={5} />
+        <Wrapper size={11} clickable={explain} onClick={() => setOpen(!open)}>
+          <Row>{children}</Row>
+        </Wrapper>
+      </Row>
+      {open && explain && (
+        <Row
+          align="center"
+          style={{ backgroundColor: "#0b1d2e", border: "1px solid #2373cf" }}
+        >
+          <StaticCol />
+          <Margin row size={5} />
+          <Col size={11}>
+            <Margin size={1} />
+            <Typography title2 color="gray500">
+              {explain}
+            </Typography>
+            <Margin size={1} />
+          </Col>
         </Row>
-      </StaticCol>
-      <Margin row size={5} />
-      <Col size={11}>
-        <Margin row size={2} />
-        <Row>{children}</Row>
-      </Col>
-    </Row>
+      )}
+    </>
   );
 }
 

@@ -89,6 +89,7 @@ const colors = {
   blue100: "#5f94c9",
   blue200: "#0697fe",
   blue300: "#2373cf",
+  blue400: "#0b1d2e",
   information: "#3584df",
 
   /* Brown */
