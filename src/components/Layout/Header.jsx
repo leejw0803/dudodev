@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { useDispatch, useSelector } from "react-redux";
 
 import { Container, Typography, Row, Margin } from "components";
 import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router";
 
 import jsLogoPng from "assets/image/icn_js_logo.png";
 import reactLogoPng from "assets/image/icn_react_logo.png";
@@ -77,9 +77,8 @@ const StyledDiv = styled.div`
 `;
 
 function Header() {
-  const dispatch = useDispatch();
   const history = useHistory();
-  const currentScroll = useSelector((state) => state.shared.scroll);
+  const location = useLocation();
 
   return (
     <Head>
@@ -87,10 +86,9 @@ function Header() {
         <MenuList>
           <Menu
             onClick={() => {
-              dispatch({ type: "SET_SCROLL", scroll: "HERO" });
               history.push("/");
             }}
-            active={currentScroll === "HERO"}
+            active={location.pathname === "/"}
           >
             <Logo src={jsLogoPng} alt="js logo" />
             <Margin row size={1} />
@@ -98,10 +96,9 @@ function Header() {
           </Menu>
           <Menu
             onClick={() => {
-              dispatch({ type: "SET_SCROLL", scroll: "STACK" });
               history.push("/stack");
             }}
-            active={currentScroll === "STACK"}
+            active={location.pathname === "/stack"}
           >
             <Logo src={reactLogoPng} alt="react logo" />
             <Margin row size={1} />
@@ -109,10 +106,9 @@ function Header() {
           </Menu>
           <Menu
             onClick={() => {
-              dispatch({ type: "SET_SCROLL", scroll: "PROJECT" });
               history.push("/project");
             }}
-            active={currentScroll === "PROJECT"}
+            active={location.pathname === "/project"}
           >
             <Logo src={reactLogoPng} alt="react logo" />
             <Margin row size={1} />

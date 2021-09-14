@@ -17,7 +17,7 @@ const Wrapper = styled(Col)`
       cursor: pointer;
 
       &:hover{
-        text-decoration: underline ${props.theme.colors.grayy700};
+        text-decoration: underline ${props.theme.colors.gray700};
       }
     `}
 `;
