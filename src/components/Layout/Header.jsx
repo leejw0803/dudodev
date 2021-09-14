@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useDispatch, useSelector } from "react-redux";
 
 import { Container, Typography, Row, Margin } from "components";
 import { useHistory } from "react-router-dom";
@@ -78,10 +77,8 @@ const StyledDiv = styled.div`
 `;
 
 function Header() {
-  const dispatch = useDispatch();
   const history = useHistory();
   const location = useLocation();
-  const currentScroll = useSelector((state) => state.shared.scroll);
 
   return (
     <Head>
