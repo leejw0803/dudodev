@@ -1,7 +1,7 @@
 # DUDO-DEV
 
 <br />
-<a href="https://leejw0803.github.io/dudodev">👀 Link</a>
+<a href="https://dudodev.vercel.app/">👀 Link</a>
 
 ## Purpose
 
