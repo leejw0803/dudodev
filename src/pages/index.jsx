@@ -1,15 +1,9 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import { useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 import { Margin, Container, StyledRow, Layout, Typography } from "components";
-
-import githubLogo from "assets/image/icn_github_logo.png";
-import naverLogo from "assets/image/icn_naver_logo.png";
-import inLogo from "assets/image/icn_in_logo.png";
-import rocketLogo from "assets/image/icn_rocket_logo.png";
 
 const StyledTypo = styled(Typography)`
   cursor: pointer;
@@ -36,8 +30,7 @@ const TypoWithLogo = styled.div`
 `;
 
 function Landing() {
-  const history = useHistory();
-  const dispatch = useDispatch();
+  const router = useRouter();
 
   return (
     <Layout>
@@ -59,8 +52,7 @@ function Landing() {
             large
             color="brown300"
             onClick={() => {
-              history.push("/stack");
-              dispatch({ type: "SET_SCROLL", scroll: "STACK" });
+              router.push("/stack");
             }}
           >
             ./SkillStacks
@@ -89,8 +81,7 @@ function Landing() {
             large
             color="brown300"
             onClick={() => {
-              history.push("/project");
-              dispatch({ type: "SET_SCROLL", scroll: "PROJECT" });
+              router.push("/project");
             }}
           >
             ./Projects
@@ -188,7 +179,7 @@ function Landing() {
           <TypoWithLogo
             onClick={() => window.open("https://github.com/leejw0803")}
           >
-            <Logo src={githubLogo} alt="github logo" />
+            <Logo src="/assets/image/icn_github_logo.png" alt="github logo" />
             <Margin row size={1} />
             <StyledTypo large color="brown300" pointer>
               leejw0803
@@ -210,7 +201,7 @@ function Landing() {
             '
           </Typography>
           <TypoWithLogo onClick={() => window.open("mailto:dlwjdd@naver.com")}>
-            <Logo src={naverLogo} alt="github logo" />
+            <Logo src="/assets/image/icn_naver_logo.png" alt="github logo" />
             <Margin row size={1} />
             <StyledTypo large color="brown300" pointer>
               dlwjdd@naver.com
@@ -236,7 +227,7 @@ function Landing() {
               window.open("https://www.linkedin.com/in/jung-woo-lee-871a091ba/")
             }
           >
-            <Logo src={inLogo} alt="github logo" />
+            <Logo src="/assets/image/icn_in_logo.png" alt="github logo" />
             <Margin row size={1} />
             <StyledTypo large color="brown300" pointer>
               jungwoolee
@@ -262,7 +253,7 @@ function Landing() {
               window.open("https://www.rocketpunch.com/@dlfjstnl7")
             }
           >
-            <Logo src={rocketLogo} alt="github logo" />
+            <Logo src="/assets/image/icn_rocket_logo.png" alt="github logo" />
             <Margin row size={1} />
             <StyledTypo large color="brown300" pointer>
               dlfjstnl7

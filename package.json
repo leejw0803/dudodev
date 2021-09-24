@@ -9,23 +9,21 @@
     "connected-react-router": "^6.9.1",
     "gh-pages": "^3.2.3",
     "localforage": "^1.10.0",
+    "next": "^11.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.2.1",
+    "styled-reset": "^4.3.4",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [
