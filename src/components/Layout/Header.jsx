@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 import { Container, Typography, Row, Margin } from "components";
-import { useHistory } from "react-router-dom";
-import { useLocation } from "react-router";
-
-import jsLogoPng from "assets/image/icn_js_logo.png";
-import reactLogoPng from "assets/image/icn_react_logo.png";
 
 const Logo = styled.img`
   width: 16px;
@@ -77,8 +73,7 @@ const StyledDiv = styled.div`
 `;
 
 function Header() {
-  const history = useHistory();
-  const location = useLocation();
+  const router = useRouter();
 
   return (
     <Head>
@@ -86,31 +81,31 @@ function Header() {
         <MenuList>
           <Menu
             onClick={() => {
-              history.push("/");
+              router.push("/");
             }}
-            active={location.pathname === "/"}
+            active={router.pathname === "/"}
           >
-            <Logo src={jsLogoPng} alt="js logo" />
+            <Logo src="/assets/image/icn_js_logo.png" alt="js logo" />
             <Margin row size={1} />
             <StyledTypography header>AboutMe.js</StyledTypography>
           </Menu>
           <Menu
             onClick={() => {
-              history.push("/stack");
+              router.push("/stack");
             }}
-            active={location.pathname === "/stack"}
+            active={router.pathname === "/stack"}
           >
-            <Logo src={reactLogoPng} alt="react logo" />
+            <Logo src="/assets/image/icn_react_logo.png" alt="react logo" />
             <Margin row size={1} />
             <StyledTypography header>SkillStacks.jsx</StyledTypography>
           </Menu>
           <Menu
             onClick={() => {
-              history.push("/project");
+              router.push("/project");
             }}
-            active={location.pathname === "/project"}
+            active={router.pathname === "/project"}
           >
-            <Logo src={reactLogoPng} alt="react logo" />
+            <Logo src="/assets/image/icn_react_logo.png" alt="react logo" />
             <Margin row size={1} />
             <StyledTypography header>Projects.jsx</StyledTypography>
           </Menu>

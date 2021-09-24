@@ -8,10 +8,6 @@ const Main = styled.main`
 `;
 
 function Layout({ children }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
       <Head />

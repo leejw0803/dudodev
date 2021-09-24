@@ -10,15 +10,6 @@ import {
   Row,
 } from "components";
 
-import jsLogo from "assets/image/icn_js_logo.png";
-import reactLogo from "assets/image/icn_react_logo.png";
-import awsLogo from "assets/image/icn_aws_logo.png";
-import githubLogo from "assets/image/icn_github_logo.png";
-import jiraLogo from "assets/image/icn_jira_logo.jpeg";
-import nextLogo from "assets/image/icn_next_logo.png";
-import scLogo from "assets/image/icn_sc_logo.png";
-import tsLogo from "assets/image/icn_ts_logo.jpeg";
-
 const Logo = styled.img`
   width: 24px;
   height: 24px;
@@ -104,7 +95,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={jsLogo} alt="js logo" />
+              <Logo src="/assets/image/icn_js_logo.png" alt="js logo" />
               <Margin row size={1} />
               JavaScript /&gt;
             </Row>
@@ -115,7 +106,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={reactLogo} alt="react logo" />
+              <Logo src="/assets/image/icn_react_logo.png" alt="react logo" />
               <Margin row size={1} />
               React /&gt;
             </Row>
@@ -126,7 +117,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={scLogo} alt="sc logo" />
+              <Logo src="/assets/image/icn_sc_logo.png" alt="sc logo" />
               <Margin row size={1} />
               StyledComponents /&gt;
             </Row>
@@ -149,7 +140,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={tsLogo} alt="ts logo" />
+              <Logo src="/assets/image/icn_ts_logo.jpeg" alt="ts logo" />
               <Margin row size={1} />
               TypeScript /&gt;
             </Row>
@@ -160,7 +151,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={nextLogo} alt="next logo" />
+              <Logo src="/assets/image/icn_next_logo.png" alt="next logo" />
               <Margin row size={1} />
               Next /&gt;
             </Row>
@@ -183,7 +174,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={githubLogo} alt="github logo" />
+              <Logo src="/assets/image/icn_github_logo.png" alt="github logo" />
               <Margin row size={1} />
               Github /&gt;
             </Row>
@@ -194,7 +185,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={jiraLogo} alt="jira logo" />
+              <Logo src="/assets/image/icn_jira_logo.jpeg" alt="jira logo" />
               <Margin row size={1} />
               JIRA /&gt;
             </Row>
@@ -205,7 +196,7 @@ function Stack() {
           <Typography large color="green100">
             <Row align="center">
               &lt;
-              <Logo src={awsLogo} alt="aws logo" />
+              <Logo src="/assets/image/icn_aws_logo.png" alt="aws logo" />
               <Margin row size={1} />
               AWS /&gt;
             </Row>
