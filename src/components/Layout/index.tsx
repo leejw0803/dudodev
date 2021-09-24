@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import styled, { withTheme } from "styled-components";
+import React, { useEffect } from 'react';
+import styled, { withTheme } from 'styled-components';
 
-import Head from "./Header";
+import Head from './Header';
 
 const Main = styled.main`
   overflow: hidden;
@@ -16,4 +16,4 @@ function Layout({ children }) {
   );
 }
 
-export default withTheme(Layout);
+export default Layout;

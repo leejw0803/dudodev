@@ -1,16 +1,17 @@
+import React from 'react';
 // import { useState, useEffect } from "react";
-import GlobalStyle from "styles/GlobalStyle";
-// import { AppProps } from "next/app";
-// import { NextPage } from "next";
-import Head from "next/head";
+import GlobalStyle from 'styles/GlobalStyle';
+import { AppProps } from 'next/app';
+import { NextPage } from 'next';
+import Head from 'next/head';
 // import { useRouter } from "next/router";
 // import { wrapper } from "state/configureStore";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from 'styled-components';
 // import { Provider } from "next-auth/client";
-import theme from "styles/theme";
+import theme from 'styles/theme';
 // import SplashScreen from "components/SplashScreen";
 
-const App = ({ Component, pageProps }) => {
+const App: NextPage<AppProps> = ({ Component, pageProps }: AppProps) => {
   // const router = useRouter();
   // const [loading, setLoading] = useState(false);
 
