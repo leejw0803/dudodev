@@ -6,7 +6,13 @@ import Typography from 'components/Typography';
 import Margin from 'components/Margin';
 
 interface WrapperTypes {
-  clickable: boolean;
+  clickable?: string;
+}
+
+interface StyledRowTypes {
+  children?: any;
+  line?: number;
+  explain?: string;
 }
 
 const StaticCol = styled.div`
@@ -29,7 +35,7 @@ const Wrapper = styled(Col)<WrapperTypes>`
     `}
 `;
 
-function StyledRow({ children, line, explain }) {
+function StyledRow({ children, line, explain }: StyledRowTypes) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -66,5 +72,11 @@ function StyledRow({ children, line, explain }) {
     </>
   );
 }
+
+StyledRow.defaultProps = {
+  children: null,
+  line: undefined,
+  explain: undefined,
+};
 
 export default StyledRow;

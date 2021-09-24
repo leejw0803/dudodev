@@ -1,9 +1,13 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
-import styled from "styled-components";
-import { useRouter } from "next/router";
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
-import { Margin, Container, StyledRow, Layout, Typography } from "components";
+import Margin from 'components/Margin';
+import { Container } from 'components/GridSystem';
+import StyledRow from 'components/StyledRow';
+import Layout from 'components/Layout';
+import Typography from 'components/Typography';
 
 const StyledTypo = styled(Typography)`
   cursor: pointer;
@@ -15,7 +19,7 @@ const StyledTypo = styled(Typography)`
 const Logo = styled.img`
   width: 24px;
   height: 24px;
-  border: 1px solid ${(props) => props.theme.colors.gray600};
+  border: 1px solid ${props => props.theme.colors.gray600};
 
   @media (max-width: 768px) {
     width: 12px;
@@ -37,13 +41,13 @@ function Landing() {
       <Container>
         <StyledRow line={1}>
           <Typography large color="violet">
-            import{" "}
+            import{' '}
           </Typography>
           <Typography large color="blue100">
-            SkillStacks{" "}
+            SkillStacks{' '}
           </Typography>
           <Typography large color="violet">
-            from{" "}
+            from{' '}
           </Typography>
           <Typography large color="brown300">
             '
@@ -52,7 +56,7 @@ function Landing() {
             large
             color="brown300"
             onClick={() => {
-              router.push("/stack");
+              router.push('/stack');
             }}
           >
             ./SkillStacks
@@ -66,13 +70,13 @@ function Landing() {
         </StyledRow>
         <StyledRow line={2}>
           <Typography large color="violet">
-            import{" "}
+            import{' '}
           </Typography>
           <Typography large color="blue100">
-            Projects{" "}
+            Projects{' '}
           </Typography>
           <Typography large color="violet">
-            from{" "}
+            from{' '}
           </Typography>
           <Typography large color="brown300">
             '
@@ -81,7 +85,7 @@ function Landing() {
             large
             color="brown300"
             onClick={() => {
-              router.push("/project");
+              router.push('/project');
             }}
           >
             ./Projects
@@ -98,13 +102,13 @@ function Landing() {
         </StyledRow>
         <StyledRow line={4}>
           <Typography large color="blue300">
-            const{" "}
+            const{' '}
           </Typography>
           <Typography large color="blue200">
-            me{" "}
+            me{' '}
           </Typography>
           <Typography large color="gray400">
-            ={" "}
+            ={' '}
           </Typography>
           <Typography large color="gray400">
             &#123;
@@ -113,7 +117,7 @@ function Landing() {
         <StyledRow line={5}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            name:{" "}
+            name:{' '}
           </Typography>
           <Typography large color="blue100">
             leeJungWoo
@@ -125,7 +129,7 @@ function Landing() {
         <StyledRow line={6}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            nickName:{" "}
+            nickName:{' '}
           </Typography>
           <Typography large color="blue100">
             dudo
@@ -137,7 +141,7 @@ function Landing() {
         <StyledRow line={7}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            motto:{" "}
+            motto:{' '}
           </Typography>
           <Typography large color="blue100">
             twblne
@@ -156,13 +160,13 @@ function Landing() {
         </StyledRow>
         <StyledRow line={10}>
           <Typography large color="blue300">
-            const{" "}
+            const{' '}
           </Typography>
           <Typography large color="blue200">
-            myContact{" "}
+            myContact{' '}
           </Typography>
           <Typography large color="gray400">
-            ={" "}
+            ={' '}
           </Typography>
           <Typography large color="gray400">
             &#123;
@@ -171,13 +175,13 @@ function Landing() {
         <StyledRow line={11}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            github:{" "}
+            github:{' '}
           </Typography>
           <Typography large color="brown300">
             '
           </Typography>
           <TypoWithLogo
-            onClick={() => window.open("https://github.com/leejw0803")}
+            onClick={() => window.open('https://github.com/leejw0803')}
           >
             <Logo src="/assets/image/icn_github_logo.png" alt="github logo" />
             <Margin row size={1} />
@@ -195,12 +199,12 @@ function Landing() {
         <StyledRow line={12}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            email:{" "}
+            email:{' '}
           </Typography>
           <Typography large color="brown300">
             '
           </Typography>
-          <TypoWithLogo onClick={() => window.open("mailto:dlwjdd@naver.com")}>
+          <TypoWithLogo onClick={() => window.open('mailto:dlwjdd@naver.com')}>
             <Logo src="/assets/image/icn_naver_logo.png" alt="github logo" />
             <Margin row size={1} />
             <StyledTypo large color="brown300" pointer>
@@ -217,14 +221,14 @@ function Landing() {
         <StyledRow line={13}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            linkedIn:{" "}
+            linkedIn:{' '}
           </Typography>
           <Typography large color="brown300">
             '
           </Typography>
           <TypoWithLogo
             onClick={() =>
-              window.open("https://www.linkedin.com/in/jung-woo-lee-871a091ba/")
+              window.open('https://www.linkedin.com/in/jung-woo-lee-871a091ba/')
             }
           >
             <Logo src="/assets/image/icn_in_logo.png" alt="github logo" />
@@ -243,14 +247,14 @@ function Landing() {
         <StyledRow line={14}>
           <Margin row size={15} />
           <Typography large color="blue100">
-            rocketPunch:{" "}
+            rocketPunch:{' '}
           </Typography>
           <Typography large color="brown300">
             '
           </Typography>
           <TypoWithLogo
             onClick={() =>
-              window.open("https://www.rocketpunch.com/@dlfjstnl7")
+              window.open('https://www.rocketpunch.com/@dlfjstnl7')
             }
           >
             <Logo src="/assets/image/icn_rocket_logo.png" alt="github logo" />
@@ -276,7 +280,7 @@ function Landing() {
         </StyledRow>
         <StyledRow line={17}>
           <Typography large color="blue300">
-            function{" "}
+            function{' '}
           </Typography>
           <Typography large color="yellow300">
             Me
@@ -285,16 +289,16 @@ function Landing() {
             (
           </Typography>
           <Typography large color="gray400">
-            &#123;{" "}
+            &#123;{' '}
           </Typography>
           <Typography large color="blue100">
-            me{" "}
+            me{' '}
           </Typography>
           <Typography large color="gray400">
             &#125;
           </Typography>
           <Typography large color="gray400">
-            ){" "}
+            ){' '}
           </Typography>
           <Typography large color="gray400">
             &#123;
@@ -303,7 +307,7 @@ function Landing() {
         <StyledRow line={18}>
           <Margin row size={10} />
           <Typography large color="violet">
-            return{" "}
+            return{' '}
           </Typography>
           <Typography large color="gray400">
             (
@@ -312,7 +316,7 @@ function Landing() {
         <StyledRow line={19}>
           <Margin row size={15} />
           <Typography large color="green100">
-            &lt;SkillStacks{" "}
+            &lt;SkillStacks{' '}
           </Typography>
           <Typography large color="blue100">
             who
@@ -330,14 +334,14 @@ function Landing() {
             &#125;
           </Typography>
           <Typography large color="green100">
-            {" "}
+            {' '}
             /&gt;
           </Typography>
         </StyledRow>
         <StyledRow line={20}>
           <Margin row size={15} />
           <Typography large color="green100">
-            &lt;Projects{" "}
+            &lt;Projects{' '}
           </Typography>
           <Typography large color="blue100">
             who
@@ -355,7 +359,7 @@ function Landing() {
             &#125;
           </Typography>
           <Typography large color="green100">
-            {" "}
+            {' '}
             /&gt;
           </Typography>
         </StyledRow>
@@ -375,10 +379,10 @@ function Landing() {
         </StyledRow>
         <StyledRow line={24}>
           <Typography large color="violet">
-            export{" "}
+            export{' '}
           </Typography>
           <Typography large color="violet">
-            default{" "}
+            default{' '}
           </Typography>
           <Typography large color="blue200">
             Me;

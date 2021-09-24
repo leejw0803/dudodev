@@ -1,19 +1,17 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
-import styled from "styled-components";
-import {
-  Margin,
-  Container,
-  StyledRow,
-  Layout,
-  Typography,
-  Row,
-} from "components";
+import React from 'react';
+import styled from 'styled-components';
+
+import { Container, Row } from 'components/GridSystem';
+import StyledRow from 'components/StyledRow';
+import Layout from 'components/Layout';
+import Typography from 'components/Typography';
+import Margin from 'components/Margin';
 
 const Logo = styled.img`
   width: 24px;
   height: 24px;
-  border: 1px solid ${(props) => props.theme.colors.gray600};
+  border: 1px solid ${props => props.theme.colors.gray600};
 
   @media (max-width: 768px) {
     width: 12px;
@@ -27,7 +25,7 @@ function Stack() {
       <Container>
         <StyledRow line={1}>
           <Typography large color="blue300">
-            function{" "}
+            function{' '}
           </Typography>
           <Typography large color="yellow300">
             SkillStacks
@@ -36,16 +34,16 @@ function Stack() {
             (
           </Typography>
           <Typography large color="gray400">
-            &#123;{" "}
+            &#123;{' '}
           </Typography>
           <Typography large color="blue100">
-            me{" "}
+            me{' '}
           </Typography>
           <Typography large color="gray400">
             &#125;
           </Typography>
           <Typography large color="gray400">
-            ){" "}
+            ){' '}
           </Typography>
           <Typography large color="gray400">
             &#123;
@@ -54,7 +52,7 @@ function Stack() {
         <StyledRow line={2}>
           <Margin row size={10} />
           <Typography large color="violet">
-            return{" "}
+            return{' '}
           </Typography>
           <Typography large color="gray400">
             (
@@ -63,7 +61,7 @@ function Stack() {
         <StyledRow line={3}>
           <Margin row size={20} />
           <Typography large color="green100">
-            &lt;Stacks{" "}
+            &lt;Stacks{' '}
           </Typography>
           <Typography large color="blue100">
             who
@@ -230,10 +228,10 @@ function Stack() {
         </StyledRow>
         <StyledRow line={22}>
           <Typography large color="violet">
-            export{" "}
+            export{' '}
           </Typography>
           <Typography large color="violet">
-            default{" "}
+            default{' '}
           </Typography>
           <Typography large color="yellow300">
             SkillStacks
