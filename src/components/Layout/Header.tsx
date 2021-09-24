@@ -1,13 +1,19 @@
-import React from "react";
-import styled from "styled-components";
-import { useRouter } from "next/router";
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
-import { Container, Typography, Row, Margin } from "components";
+import { Container, Row } from 'components/GridSystem';
+import Typography from 'components/Typography';
+import Margin from 'components/Margin';
+
+interface MenuTypes {
+  active: boolean;
+}
 
 const Logo = styled.img`
   width: 16px;
   height: 16px;
-  border: 1px solid ${(props) => props.theme.colors.gray600};
+  border: 1px solid ${props => props.theme.colors.gray600};
 
   @media (max-width: 768px) {
     width: 8px;
@@ -15,7 +21,7 @@ const Logo = styled.img`
   }
 `;
 
-const Menu = styled.li`
+const Menu = styled.li<MenuTypes>`
   padding: 0 16px;
   height: 48px;
   display: flex;
@@ -23,15 +29,14 @@ const Menu = styled.li`
   justify-content: center;
   cursor: pointer;
 
-  ${(props) =>
-    props.active && `background-color: ${props.theme.colors.gray900};`}
+  ${props => props.active && `background-color: ${props.theme.colors.gray900};`}
 
   @media (max-width: 768px) {
     height: 30px;
   }
 `;
 
-const StyledTypography = styled((props) => <Typography {...props} />)`
+const StyledTypography = styled(props => <Typography {...props} />)`
   &:hover {
     font-weight: bold;
   }
@@ -63,13 +68,13 @@ const Head = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  color: ${(props) => props.theme.colors.gray400};
-  background-color: ${(props) => props.theme.colors.gray700};
+  color: ${props => props.theme.colors.gray400};
+  background-color: ${props => props.theme.colors.gray700};
   z-index: 99;
 `;
 
 const StyledDiv = styled.div`
-  background-color: ${(props) => props.theme.colors.gray900};
+  background-color: ${props => props.theme.colors.gray900};
 `;
 
 function Header() {
@@ -81,9 +86,9 @@ function Header() {
         <MenuList>
           <Menu
             onClick={() => {
-              router.push("/");
+              router.push('/');
             }}
-            active={router.pathname === "/"}
+            active={router.pathname === '/'}
           >
             <Logo src="/assets/image/icn_js_logo.png" alt="js logo" />
             <Margin row size={1} />
@@ -91,9 +96,9 @@ function Header() {
           </Menu>
           <Menu
             onClick={() => {
-              router.push("/stack");
+              router.push('/stack');
             }}
-            active={router.pathname === "/stack"}
+            active={router.pathname === '/stack'}
           >
             <Logo src="/assets/image/icn_react_logo.png" alt="react logo" />
             <Margin row size={1} />
@@ -101,9 +106,9 @@ function Header() {
           </Menu>
           <Menu
             onClick={() => {
-              router.push("/project");
+              router.push('/project');
             }}
-            active={router.pathname === "/project"}
+            active={router.pathname === '/project'}
           >
             <Logo src="/assets/image/icn_react_logo.png" alt="react logo" />
             <Margin row size={1} />

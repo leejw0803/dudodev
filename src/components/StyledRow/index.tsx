@@ -1,6 +1,13 @@
-import { useState } from "react";
-import styled from "styled-components";
-import { Row, Col, Typography, Margin } from "components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+
+import { Row, Col } from 'components/GridSystem';
+import Typography from 'components/Typography';
+import Margin from 'components/Margin';
+
+interface WrapperTypes {
+  clickable: boolean;
+}
 
 const StaticCol = styled.div`
   width: 60px;
@@ -10,8 +17,8 @@ const StaticCol = styled.div`
   }
 `;
 
-const Wrapper = styled(Col)`
-  ${(props) =>
+const Wrapper = styled(Col)<WrapperTypes>`
+  ${props =>
     props.clickable &&
     `
       cursor: pointer;
@@ -43,7 +50,7 @@ function StyledRow({ children, line, explain }) {
       {open && explain && (
         <Row
           align="center"
-          style={{ backgroundColor: "#0b1d2e", border: "1px solid #2373cf" }}
+          style={{ backgroundColor: '#0b1d2e', border: '1px solid #2373cf' }}
         >
           <StaticCol />
           <Margin row size={5} />
