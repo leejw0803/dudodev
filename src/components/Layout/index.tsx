@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
-import styled, { withTheme } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 
 import Head from './Header';
+
+interface LayoutTypes {
+  children: any;
+}
 
 const Main = styled.main`
   overflow: hidden;
 `;
 
-function Layout({ children }) {
+function Layout({ children }: LayoutTypes) {
   return (
     <>
       <Head />
