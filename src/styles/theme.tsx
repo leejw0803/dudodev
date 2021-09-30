@@ -37,14 +37,14 @@ const colors = {
   yellow50: '#fff8ee',
   yellow60: '#fff8e1',
   yellow250: '#ffd94d',
-  yellow300: '#ffc847', // 메인컬러 (노란색)
+  yellow300: '#ffc847',
   yellow320: '#fdb92e',
 
   /* CoralPink */
   coralPink50: '#ffebeb',
   coralPink70: '#ffcdcd',
   coralPink200: '#ff956c',
-  coralPink300: '#ff6d6f', // 서브컬러 (코랄핑크)
+  coralPink300: '#ff6d6f',
   coralPink500: '#e24a2f',
 
   /* Pink */
