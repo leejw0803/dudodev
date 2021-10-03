@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
+
+import { RootState } from 'store/configureStore';
 
 import Head from './Header';
 
@@ -7,15 +10,26 @@ interface LayoutTypes {
   children: any;
 }
 
-const Main = styled.main`
+interface MainTypes {
+  mode: string;
+}
+
+const Main = styled.main<MainTypes>`
   overflow: hidden;
+
+  ${props =>
+    props.mode === 'user' &&
+    `
+    font-family: 'Nanum Square Round', sans-serif;
+  `}
 `;
 
 function Layout({ children }: LayoutTypes) {
+  const mode = useSelector((store: RootState) => store.mode.mode);
   return (
     <>
       <Head />
-      <Main>{children}</Main>
+      <Main mode={mode}>{children}</Main>
     </>
   );
 }
