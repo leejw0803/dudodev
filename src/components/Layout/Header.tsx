@@ -177,24 +177,20 @@ function Header() {
           </Button>
         </MenuList>
       </Container>
-      <StyledDiv>
-        <Margin size={0.5} />
-        <Container row center>
-          <Row>
-            <Margin row size={2} />
-            {mode === 'dev' ? (
+      {mode === 'dev' && (
+        <StyledDiv>
+          <Margin size={0.5} />
+          <Container row center>
+            <Row>
+              <Margin row size={2} />
               <Typography color="gray500" title3>
                 front_end &gt; developer &gt; lee_jung_woo &gt; aka &gt; dudo
               </Typography>
-            ) : (
-              <Typography color="gray500" title3>
-                Front End Developer Jung_woo LEE
-              </Typography>
-            )}
-          </Row>
-        </Container>
-        <Margin size={2} />
-      </StyledDiv>
+            </Row>
+          </Container>
+          <Margin size={2} />
+        </StyledDiv>
+      )}
     </Head>
   );
 }
