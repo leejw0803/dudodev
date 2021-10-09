@@ -1,19 +1,17 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
-import styled from "styled-components";
-import {
-  Margin,
-  Container,
-  StyledRow,
-  Layout,
-  Typography,
-  Row,
-} from "components";
+import React from 'react';
+import styled from 'styled-components';
+
+import { Container, Row } from 'components/GridSystem';
+import StyledRow from 'components/StyledRow';
+import Layout from 'components/Layout';
+import Typography from 'components/Typography';
+import Margin from 'components/Margin';
 
 const ClickableRow = styled(Row)`
   cursor: pointer;
   &:hover {
-    background-color: ${(props) => props.theme.colors.gray300};
+    background-color: ${props => props.theme.colors.gray300};
   }
 `;
 
@@ -23,7 +21,7 @@ function Project() {
       <Container>
         <StyledRow line={1}>
           <Typography large color="blue300">
-            function{" "}
+            function{' '}
           </Typography>
           <Typography large color="yellow300">
             Projects
@@ -32,16 +30,16 @@ function Project() {
             (
           </Typography>
           <Typography large color="gray400">
-            &#123;{" "}
+            &#123;{' '}
           </Typography>
           <Typography large color="blue100">
-            me{" "}
+            me{' '}
           </Typography>
           <Typography large color="gray400">
             &#125;
           </Typography>
           <Typography large color="gray400">
-            ){" "}
+            ){' '}
           </Typography>
           <Typography large color="gray400">
             &#123;
@@ -50,7 +48,7 @@ function Project() {
         <StyledRow line={2}>
           <Margin row size={10} />
           <Typography large color="violet">
-            return{" "}
+            return{' '}
           </Typography>
           <Typography large color="gray400">
             (
@@ -59,7 +57,7 @@ function Project() {
         <StyledRow line={3}>
           <Margin row size={20} />
           <Typography large color="green100">
-            &lt;Projects{" "}
+            &lt;Projects{' '}
           </Typography>
           <Typography large color="blue100">
             who
@@ -91,7 +89,7 @@ function Project() {
           <Typography large color="green100">
             <ClickableRow
               align="center"
-              onClick={() => window.open("https://make.education")}
+              onClick={() => window.open('https://make.education')}
             >
               &lt;MakeEducationSite /&gt;
             </ClickableRow>
@@ -102,7 +100,7 @@ function Project() {
           <Typography large color="green100">
             <ClickableRow
               align="center"
-              onClick={() => window.open("https://makeground.net")}
+              onClick={() => window.open('https://makeground.net')}
             >
               &lt;MakeGroundSite /&gt;
             </ClickableRow>
@@ -126,7 +124,7 @@ function Project() {
             <ClickableRow
               align="center"
               onClick={() =>
-                window.open("https://github.com/leejw0803/dudodev")
+                window.open('https://github.com/leejw0803/dudodev')
               }
             >
               &lt;PortfolioRepo /&gt;
@@ -139,7 +137,7 @@ function Project() {
             <ClickableRow
               align="center"
               onClick={() =>
-                window.open("https://github.com/leejw0803/algorithm")
+                window.open('https://github.com/leejw0803/algorithm')
               }
             >
               &lt;AlgorithmRepo /&gt;
@@ -163,7 +161,7 @@ function Project() {
           <Typography large color="green100">
             <ClickableRow
               align="center"
-              onClick={() => window.open("https://github.com/leejw0803")}
+              onClick={() => window.open('https://github.com/leejw0803')}
             >
               &lt;GithubRepo /&gt;
             </ClickableRow>
@@ -197,10 +195,10 @@ function Project() {
         </StyledRow>
         <StyledRow line={19}>
           <Typography large color="violet">
-            export{" "}
+            export{' '}
           </Typography>
           <Typography large color="violet">
-            default{" "}
+            default{' '}
           </Typography>
           <Typography large color="yellow300">
             Projects
