@@ -12,6 +12,7 @@ interface TypograyphyTypes {
   content1?: boolean;
   content2?: boolean;
   header?: boolean;
+  giant?: boolean;
 }
 const Typography = styled.div<TypograyphyTypes>`
   color: ${props => (props.color ? props.theme.colors[props.color] : 'white')};
@@ -43,6 +44,23 @@ const Typography = styled.div<TypograyphyTypes>`
     `
       font-size: 6rem;
       font-weigth: bold;  
+
+
+      @media (max-width: 768px) {
+        font-size: 3rem;
+      }
+    `}
+
+  ${props =>
+    props.giant &&
+    `
+      font-size: 4rem;
+      font-weight: normal;
+      font-style: normal;
+      
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
     `}
 
   ${props =>
