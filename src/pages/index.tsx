@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 
 import Margin from 'components/Margin';
-import { Container } from 'components/GridSystem';
+import { Container, Row, Col } from 'components/GridSystem';
 import StyledRow from 'components/StyledRow';
 import Layout from 'components/Layout';
 import Typography from 'components/Typography';
@@ -36,9 +36,37 @@ const TypoWithLogo = styled.div`
   align-items: center;
 `;
 
-const UserHero = styled.img`
-  width: 100%;
-  height: 100%;
+const LogoForUser = styled.img`
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
+
+const ContactBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: ${props => props.theme.colors.gray600};
+  border-radius: 16px;
+  padding: 30px;
+
+  ${LogoForUser} ~ ${LogoForUser} {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+
+    ${LogoForUser} ~ ${LogoForUser} {
+      margin-left: 30px;
+    }
+  }
 `;
 
 function Landing() {
@@ -417,7 +445,81 @@ function Landing() {
             </StyledRow>
           </>
         )}
-        {mode === 'user' && <UserHero src="/assets/image/img_landing.png" />}
+        {mode === 'user' && (
+          <>
+            <Margin size={5} />
+            <Row>
+              <Margin row size={5} />
+              <Typography giant color="gray400">
+                Front-end Engineer
+              </Typography>
+            </Row>
+            <Row>
+              <Margin row size={5} />
+              <Typography landing color="gray400">
+                Jung-woo LEE
+              </Typography>
+            </Row>
+            <Col>
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray700">
+                  [고유명사]
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography large color="gray500">
+                  1. 피하기 보단 부딪혀 해결하는 사람
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography large color="gray500">
+                  2. 본질에 집중하는 사람
+                </Typography>
+              </Row>
+            </Col>
+            <Margin size={10} />
+            <Row>
+              <Margin row size={5} />
+              <ContactBox>
+                <LogoForUser
+                  src="/assets/image/icn_github_simple_logo.png"
+                  alt="github logo"
+                  onClick={() => window.open('https://github.com/leejw0803')}
+                />
+                <LogoForUser
+                  src="/assets/image/icn_linkedin_simple_logo.png"
+                  alt="linkedin logo"
+                  onClick={() =>
+                    window.open(
+                      'https://www.linkedin.com/in/jung-woo-lee-871a091ba/',
+                    )
+                  }
+                />
+                <LogoForUser
+                  src="/assets/image/icn_email_logo.png"
+                  alt="email logo"
+                  onClick={() => window.open('mailto:dlwjdd@naver.com')}
+                />
+                <LogoForUser
+                  src="/assets/image/icn_rocketpunch_logo.svg"
+                  alt="rocketpunch logo"
+                  onClick={() =>
+                    window.open('https://www.rocketpunch.com/@dlfjstnl7')
+                  }
+                />
+                <LogoForUser
+                  src="/assets/image/icn_insta_logo.png"
+                  alt="insta logo"
+                  onClick={() => window.open('https://instagram.com/twblne')}
+                />
+              </ContactBox>
+              <Margin row size={5} />
+            </Row>
+          </>
+        )}
       </Container>
     </Layout>
   );

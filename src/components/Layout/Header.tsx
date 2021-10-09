@@ -89,7 +89,7 @@ const Head = styled.header<HeaderTypes>`
   ${props =>
     props.mode === 'user' &&
     `
-    font-family: 'Nanum Square Round', sans-serif;
+    font-family: 'Elice Digital', sans-serif;
   `}
 `;
 
