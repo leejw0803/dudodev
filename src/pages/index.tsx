@@ -36,39 +36,6 @@ const TypoWithLogo = styled.div`
   align-items: center;
 `;
 
-const LogoForUser = styled.img`
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    width: 30px;
-    height: 30px;
-  }
-`;
-
-const ContactBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  background-color: ${props => props.theme.colors.gray600};
-  border-radius: 16px;
-  padding: 30px;
-
-  ${LogoForUser} ~ ${LogoForUser} {
-    margin-left: 20px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 15px;
-    width: 100%;
-    justify-content: center;
-
-    ${LogoForUser} ~ ${LogoForUser} {
-      margin-left: 30px;
-    }
-  }
-`;
-
 function Landing() {
   const router = useRouter();
   const mode = useSelector((store: RootState) => store.mode.mode);

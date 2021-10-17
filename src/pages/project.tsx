@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import { Container, Row, Col } from 'components/GridSystem';
+import { Container, Row } from 'components/GridSystem';
 import StyledRow from 'components/StyledRow';
 import Layout from 'components/Layout';
 import Typography from 'components/Typography';
