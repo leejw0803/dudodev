@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { Container, Row } from 'components/GridSystem';
 import Typography from 'components/Typography';
 import Margin from 'components/Margin';
-import Button from 'components/Button';
 
 import { RootState } from 'store/configureStore';
-import { setMode } from 'store/Mode/index';
 
 interface HeaderTypes {
   mode: string;
@@ -100,7 +98,6 @@ const StyledDiv = styled.div`
 function Header() {
   const router = useRouter();
   const mode = useSelector((store: RootState) => store.mode.mode);
-  const dispatch = useDispatch();
 
   return (
     <Head mode={mode}>
@@ -165,16 +162,6 @@ function Header() {
               </StyledTypography>
             </Menu>
           </Row>
-          <Button
-            onClick={() => {
-              dispatch(setMode(mode === 'dev' ? 'user' : 'dev'));
-            }}
-            tiny
-            simple
-            round
-          >
-            {mode === 'dev' ? '👉🏼User' : '👉🏼Dev'}
-          </Button>
         </MenuList>
       </Container>
       {mode === 'dev' && (

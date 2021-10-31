@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import { Container, Row } from 'components/GridSystem';
+import { Container, Row, Col } from 'components/GridSystem';
 import StyledRow from 'components/StyledRow';
 import Layout from 'components/Layout';
 import Typography from 'components/Typography';
@@ -228,6 +228,73 @@ function Project() {
                 프로젝트 포트폴리오
               </Typography>
             </Row>
+            <Margin size={3} />
+            <Col>
+              <Row align="baseline">
+                <Margin row size={5} />
+                <Typography large color="gray400">
+                  Make Education
+                </Typography>
+                <Margin row size={1} />
+                <Typography
+                  title3
+                  color="gray600"
+                  onClick={() => window.open('https://make.education')}
+                  pointer
+                >
+                  site
+                </Typography>
+              </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  MAKE 서비스 내 관리자들을 위한 대시보드 기능을 제공하는
+                  웹사이트입니다.
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography title3 color="gray600">
+                  기술 스택 : React, Redux, React-hooks, styled-components,
+                  JavaScript
+                </Typography>
+              </Row>
+            </Col>
+            <Margin size={5} />
+            <Col>
+              <Row align="baseline">
+                <Margin row size={5} />
+                <Typography large color="gray400">
+                  개인 홈페이지
+                </Typography>
+                <Margin row size={1} />
+                <Typography
+                  title3
+                  color="gray600"
+                  onClick={() =>
+                    window.open('https://github.com/leejw0803/dudodev')
+                  }
+                  pointer
+                >
+                  repo
+                </Typography>
+              </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  개인 포트폴리오 사이트입니다.
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography title3 color="gray600">
+                  기술 스택 : Next, Redux, React-hooks, styled-components,
+                  TypeScript
+                </Typography>
+              </Row>
+            </Col>
           </>
         )}
       </Container>
