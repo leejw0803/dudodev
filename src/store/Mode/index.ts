@@ -17,7 +17,7 @@ interface ModeReduxState {
 }
 
 const initialState: ModeReduxState = {
-  mode: 'dev',
+  mode: 'user',
   isDark: true,
 };
 
