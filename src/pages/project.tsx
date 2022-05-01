@@ -96,9 +96,9 @@ function Project() {
               <Typography large color="green100">
                 <ClickableRow
                   align="center"
-                  onClick={() => window.open('https://make.education')}
+                  onClick={() => window.open('https://trymake.co')}
                 >
-                  &lt;MakeEducationSite /&gt;
+                  &lt;Make /&gt;
                 </ClickableRow>
               </Typography>
             </StyledRow>
@@ -107,35 +107,33 @@ function Project() {
               <Typography large color="green100">
                 <ClickableRow
                   align="center"
-                  onClick={() => window.open('https://makeground.net')}
+                  onClick={() => window.open('https://edu.trymake.co')}
                 >
-                  &lt;MakeGroundSite /&gt;
+                  &lt;MakeEducation /&gt;
                 </ClickableRow>
               </Typography>
             </StyledRow>
             <StyledRow line={7}>
-              <Margin row size={30} />
+              <Margin row size={40} />
               <Typography large color="green100">
-                &lt;/ContributeTo&gt;
+                <ClickableRow
+                  align="center"
+                  onClick={() => window.open('https://project.trymake.co')}
+                >
+                  &lt;MakeProjects /&gt;
+                </ClickableRow>
               </Typography>
             </StyledRow>
             <StyledRow line={8}>
               <Margin row size={30} />
               <Typography large color="green100">
-                &lt;SoloProjects&gt;
+                &lt;/ContributeTo&gt;
               </Typography>
             </StyledRow>
             <StyledRow line={9}>
-              <Margin row size={40} />
+              <Margin row size={30} />
               <Typography large color="green100">
-                <ClickableRow
-                  align="center"
-                  onClick={() =>
-                    window.open('https://github.com/leejw0803/dudodev')
-                  }
-                >
-                  &lt;PortfolioRepo /&gt;
-                </ClickableRow>
+                &lt;SideProjects&gt;
               </Typography>
             </StyledRow>
             <StyledRow line={10}>
@@ -144,26 +142,37 @@ function Project() {
                 <ClickableRow
                   align="center"
                   onClick={() =>
-                    window.open('https://github.com/leejw0803/algorithm')
+                    window.open('https://github.com/leejw0803/dudodev')
                   }
                 >
-                  &lt;AlgorithmRepo /&gt;
+                  &lt;MyPageRepo /&gt;
                 </ClickableRow>
               </Typography>
             </StyledRow>
             <StyledRow line={11}>
-              <Margin row size={30} />
+              <Margin row size={40} />
               <Typography large color="green100">
-                &lt;/SoloProjects&gt;
+                <ClickableRow
+                  align="center"
+                  onClick={() => window.open('https://github.com/CAWEEK')}
+                >
+                  &lt;CaweekRepo /&gt;
+                </ClickableRow>
               </Typography>
             </StyledRow>
             <StyledRow line={12}>
               <Margin row size={30} />
               <Typography large color="green100">
-                &lt;Others&gt;
+                &lt;/SideProjects&gt;
               </Typography>
             </StyledRow>
             <StyledRow line={13}>
+              <Margin row size={30} />
+              <Typography large color="green100">
+                &lt;Others&gt;
+              </Typography>
+            </StyledRow>
+            <StyledRow line={14}>
               <Margin row size={40} />
               <Typography large color="green100">
                 <ClickableRow
@@ -174,33 +183,33 @@ function Project() {
                 </ClickableRow>
               </Typography>
             </StyledRow>
-            <StyledRow line={14}>
+            <StyledRow line={15}>
               <Margin row size={30} />
               <Typography large color="green100">
                 &lt;/Others&gt;
               </Typography>
             </StyledRow>
-            <StyledRow line={15}>
+            <StyledRow line={16}>
               <Margin row size={20} />
               <Typography large color="green100">
                 &lt;/Projects&gt;
               </Typography>
             </StyledRow>
-            <StyledRow line={16}>
+            <StyledRow line={17}>
               <Margin row size={10} />
               <Typography large color="gray400">
                 );
               </Typography>
             </StyledRow>
-            <StyledRow line={17}>
+            <StyledRow line={18}>
               <Typography large color="gray400">
                 &#125;;
               </Typography>
             </StyledRow>
-            <StyledRow line={18}>
+            <StyledRow line={19}>
               <Margin size={6} />
             </StyledRow>
-            <StyledRow line={19}>
+            <StyledRow line={20}>
               <Typography large color="violet">
                 export{' '}
               </Typography>
@@ -214,7 +223,7 @@ function Project() {
                 ;
               </Typography>
             </StyledRow>
-            <StyledRow line={20}>
+            <StyledRow line={21}>
               <Margin size={6} />
             </StyledRow>
           </>
@@ -225,11 +234,40 @@ function Project() {
             <Row>
               <Margin row size={5} />
               <Typography giant color="gray400">
-                프로젝트 포트폴리오
+                프로젝트
               </Typography>
             </Row>
             <Margin size={3} />
             <Col>
+              <Row align="baseline">
+                <Margin row size={5} />
+                <Typography large color="gray400">
+                  Make
+                </Typography>
+                <Margin row size={1} />
+                <Typography
+                  title3
+                  color="gray600"
+                  onClick={() => window.open('https://trymake.co')}
+                  pointer
+                >
+                  site
+                </Typography>
+              </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  MAKE 서비스를 소개하는 메인 랜딩페이지입니다.
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography title3 color="gray600">
+                  기술 스택 : Next, React-hooks, styled-components, TypeScript
+                </Typography>
+              </Row>
+              <Margin size={5} />
               <Row align="baseline">
                 <Margin row size={5} />
                 <Typography large color="gray400">
@@ -239,7 +277,7 @@ function Project() {
                 <Typography
                   title3
                   color="gray600"
-                  onClick={() => window.open('https://make.education')}
+                  onClick={() => window.open('https://edu.trymake.co')}
                   pointer
                 >
                   site
@@ -258,6 +296,36 @@ function Project() {
                 <Typography title3 color="gray600">
                   기술 스택 : React, Redux, React-hooks, styled-components,
                   JavaScript
+                </Typography>
+              </Row>
+              <Margin size={5} />
+              <Row align="baseline">
+                <Margin row size={5} />
+                <Typography large color="gray400">
+                  Make Project
+                </Typography>
+                <Margin row size={1} />
+                <Typography
+                  title3
+                  color="gray600"
+                  onClick={() => window.open('https://project.trymake.co')}
+                  pointer
+                >
+                  site
+                </Typography>
+              </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  MAKE 서비스 중 프로젝트 기능을 웹으로 구현하였습니다.
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography title3 color="gray600">
+                  기술 스택 : Next, MobX, React-hooks, styled-components,
+                  JavaScript, TypeScript
                 </Typography>
               </Row>
             </Col>
@@ -292,6 +360,36 @@ function Project() {
                 <Typography title3 color="gray600">
                   기술 스택 : Next, Redux, React-hooks, styled-components,
                   TypeScript
+                </Typography>
+              </Row>
+              <Margin size={5} />
+
+              <Row align="baseline">
+                <Margin row size={5} />
+                <Typography large color="gray400">
+                  CAWEEK
+                </Typography>
+                <Margin row size={1} />
+                <Typography
+                  title3
+                  color="gray600"
+                  onClick={() => window.open('https://github.com/CAWEEK')}
+                  pointer
+                >
+                  repo
+                </Typography>
+              </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  나만의 회고 플랫폼 CAWEEK의 레포지토리 입니다.
+                </Typography>
+              </Row>
+              <Row>
+                <Margin row size={5} />
+                <Typography title3 color="gray600">
+                  기술 스택 : Next, emotion, Rollup, TypeScript
                 </Typography>
               </Row>
             </Col>

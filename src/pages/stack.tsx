@@ -92,12 +92,6 @@ function Stack() {
             <StyledRow line={4}>
               <Margin row size={30} />
               <Typography large color="green100">
-                &lt;Good&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={5}>
-              <Margin row size={40} />
-              <Typography large color="green100">
                 <Row align="center">
                   &lt;
                   <Logo src="/assets/image/icn_js_logo.png" alt="js logo" />
@@ -106,8 +100,19 @@ function Stack() {
                 </Row>
               </Typography>
             </StyledRow>
+            <StyledRow line={5}>
+              <Margin row size={30} />
+              <Typography large color="green100">
+                <Row align="center">
+                  &lt;
+                  <Logo src="/assets/image/icn_ts_logo.jpeg" alt="ts logo" />
+                  <Margin row size={1} />
+                  TypeScript /&gt;
+                </Row>
+              </Typography>
+            </StyledRow>
             <StyledRow line={6}>
-              <Margin row size={40} />
+              <Margin row size={30} />
               <Typography large color="green100">
                 <Row align="center">
                   &lt;
@@ -121,41 +126,7 @@ function Stack() {
               </Typography>
             </StyledRow>
             <StyledRow line={7}>
-              <Margin row size={40} />
-              <Typography large color="green100">
-                <Row align="center">
-                  &lt;
-                  <Logo src="/assets/image/icn_sc_logo.png" alt="sc logo" />
-                  <Margin row size={1} />
-                  StyledComponents /&gt;
-                </Row>
-              </Typography>
-            </StyledRow>
-            <StyledRow line={8}>
               <Margin row size={30} />
-              <Typography large color="green100">
-                &lt;/Good&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={9}>
-              <Margin row size={30} />
-              <Typography large color="green100">
-                &lt;NotBad&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={10}>
-              <Margin row size={40} />
-              <Typography large color="green100">
-                <Row align="center">
-                  &lt;
-                  <Logo src="/assets/image/icn_ts_logo.jpeg" alt="ts logo" />
-                  <Margin row size={1} />
-                  TypeScript /&gt;
-                </Row>
-              </Typography>
-            </StyledRow>
-            <StyledRow line={11}>
-              <Margin row size={40} />
               <Typography large color="green100">
                 <Row align="center">
                   &lt;
@@ -165,34 +136,19 @@ function Stack() {
                 </Row>
               </Typography>
             </StyledRow>
-            <StyledRow line={12}>
+            <StyledRow line={8}>
               <Margin row size={30} />
-              <Typography large color="green100">
-                &lt;/NotBad&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={13}>
-              <Margin row size={30} />
-              <Typography large color="green100">
-                &lt;Others&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={14}>
-              <Margin row size={40} />
               <Typography large color="green100">
                 <Row align="center">
                   &lt;
-                  <Logo
-                    src="/assets/image/icn_github_logo.png"
-                    alt="github logo"
-                  />
+                  <Logo src="/assets/image/icn_sc_logo.png" alt="sc logo" />
                   <Margin row size={1} />
-                  Github /&gt;
+                  StyledComponents /&gt;
                 </Row>
               </Typography>
             </StyledRow>
-            <StyledRow line={15}>
-              <Margin row size={40} />
+            <StyledRow line={9}>
+              <Margin row size={30} />
               <Typography large color="green100">
                 <Row align="center">
                   &lt;
@@ -205,8 +161,8 @@ function Stack() {
                 </Row>
               </Typography>
             </StyledRow>
-            <StyledRow line={16}>
-              <Margin row size={40} />
+            <StyledRow line={10}>
+              <Margin row size={30} />
               <Typography large color="green100">
                 <Row align="center">
                   &lt;
@@ -216,33 +172,27 @@ function Stack() {
                 </Row>
               </Typography>
             </StyledRow>
-            <StyledRow line={17}>
-              <Margin row size={30} />
-              <Typography large color="green100">
-                &lt;/Others&gt;
-              </Typography>
-            </StyledRow>
-            <StyledRow line={18}>
+            <StyledRow line={11}>
               <Margin row size={20} />
               <Typography large color="green100">
                 &lt;/Stacks&gt;
               </Typography>
             </StyledRow>
-            <StyledRow line={19}>
+            <StyledRow line={12}>
               <Margin row size={10} />
               <Typography large color="gray400">
                 );
               </Typography>
             </StyledRow>
-            <StyledRow line={20}>
+            <StyledRow line={13}>
               <Typography large color="gray400">
                 &#125;;
               </Typography>
             </StyledRow>
-            <StyledRow line={21}>
+            <StyledRow line={14}>
               <Margin size={6} />
             </StyledRow>
-            <StyledRow line={22}>
+            <StyledRow line={15}>
               <Typography large color="violet">
                 export{' '}
               </Typography>
@@ -256,7 +206,7 @@ function Stack() {
                 ;
               </Typography>
             </StyledRow>
-            <StyledRow line={23}>
+            <StyledRow line={16}>
               <Margin size={6} />
             </StyledRow>
           </>
@@ -274,39 +224,32 @@ function Stack() {
             <Col>
               <Row>
                 <Margin row size={5} />
-                <Typography large color="gray400">
-                  Level 2
+                <Typography title2 color="gray500">
+                  HTML/CSS, JavaScript, TypeScript
                 </Typography>
               </Row>
               <Margin size={1} />
               <Row>
                 <Margin row size={5} />
                 <Typography title2 color="gray500">
-                  HTML, CSS, JavaScript
-                </Typography>
-              </Row>
-              <Row>
-                <Margin row size={5} />
-                <Typography title2 color="gray500">
-                  React, styled-components, Redux
-                </Typography>
-              </Row>
-            </Col>
-            <Margin size={5} />
-            <Col>
-              <Row>
-                <Margin row size={5} />
-                <Typography large color="gray400">
-                  Level 1
+                  React, Next
                 </Typography>
               </Row>
               <Margin size={1} />
               <Row>
                 <Margin row size={5} />
                 <Typography title2 color="gray500">
-                  Next, TypeScript
+                  styled-components, emotion
                 </Typography>
               </Row>
+              <Margin size={1} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  Webpack, Rollup
+                </Typography>
+              </Row>
+              <Margin size={5} />
               <Row>
                 <Margin row size={5} />
                 <Typography title2 color="gray500">
@@ -326,7 +269,7 @@ function Stack() {
               <Row>
                 <Margin row size={5} />
                 <Typography title2 color="gray500">
-                  Github, AWS, JIRA
+                  Git, AWS, JIRA
                 </Typography>
               </Row>
             </Col>

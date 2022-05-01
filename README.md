@@ -1,4 +1,4 @@
-# DUDO-DEV
+# DUDO-DEV 개인 포트폴리오 홈페이지
 
 <br />
 <a href="https://twblne-dudo.vercel.app/">👀 Link</a>
