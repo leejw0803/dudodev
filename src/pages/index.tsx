@@ -427,17 +427,70 @@ function Landing() {
                 이 정 우
               </Typography>
             </Row>
+            <Margin size={5} />
             <Col>
               <Row>
                 <Margin row size={5} />
                 <Typography large color="gray500">
-                  1. 피하기 보단 부딪혀 해결하는 사람
+                  본질에 부딪혀 문제를 해결하는 개발자
                 </Typography>
               </Row>
+              <Margin size={6} />
               <Row>
                 <Margin row size={5} />
-                <Typography large color="gray500">
-                  2. 본질에 집중하는 사람
+                <Typography title1 color="gray500">
+                  스타트 업에서 1년 남짓 웹 개발을 하고 있습니다.
+                </Typography>
+              </Row>
+              <Margin size={3} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  주로 프론트엔드 개발을 도맡아 진행했고,
+                  <br />
+                  필요에 따라 백엔드 API 개발을 겸했습니다.
+                  <br />
+                  현재는 웹팀 리드 역할을 맡아 팀 리소스를 관리하고 있습니다.
+                </Typography>
+              </Row>
+              <Margin size={6} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title1 color="gray500">
+                  문제의 본질을 파악하려고 노력합니다.
+                </Typography>
+              </Row>
+              <Margin size={3} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  당장의 문제를 손바닥으로 가리기 보다는
+                  <br />
+                  원인을 파고들어 해결하고자 합니다.
+                  <br />
+                  번들사이즈가 커서 로딩이 느린 서비스의 FTP를
+                  <br />
+                  압축을 통해 2배 이상 단축시킨 경험이 있습니다.
+                </Typography>
+              </Row>
+              <Margin size={6} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title1 color="gray500">
+                  커뮤니케이션을 중요하게 생각합니다.
+                </Typography>
+              </Row>
+              <Margin size={3} />
+              <Row>
+                <Margin row size={5} />
+                <Typography title2 color="gray500">
+                  서비스 및 개발은 Trade-off의 연속이고,
+                  <br />
+                  현 상황에 가장 적합한 선택을 위해선
+                  <br />
+                  의견의 조율이 중요하다고 생각합니다.
+                  <br />
+                  누구든지 의견을 낼 수 있는 문화를 지향합니다.
                 </Typography>
               </Row>
             </Col>
