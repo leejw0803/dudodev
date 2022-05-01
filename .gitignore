@@ -28,8 +28,8 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log
 
-yarn.lock
-package-lock.json
+# yarn.lock
+# package-lock.json
 
 # debug
 npm-debug.log*

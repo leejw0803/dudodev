@@ -13,7 +13,7 @@
     "connected-react-router": "^6.9.1",
     "gh-pages": "^3.2.3",
     "localforage": "^1.10.0",
-    "next": "^11.1.2",
+    "next": "^12.1.5",
     "next-redux-wrapper": "^7.0.5",
     "randomstring": "^1.2.1",
     "react": "^17.0.1",
