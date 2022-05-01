@@ -430,12 +430,6 @@ function Landing() {
             <Col>
               <Row>
                 <Margin row size={5} />
-                <Typography title2 color="gray700">
-                  [고유명사]
-                </Typography>
-              </Row>
-              <Row>
-                <Margin row size={5} />
                 <Typography large color="gray500">
                   1. 피하기 보단 부딪혀 해결하는 사람
                 </Typography>
